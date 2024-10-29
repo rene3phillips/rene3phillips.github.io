@@ -1,71 +1,69 @@
 <!DOCTYPE html>
-<html lang="en"> 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<title>Natasha R. Phillips</title>
-	<link rel="stylesheet" href="styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
-</head>
-<body>
+<html lang="en">
 
-	<div class="navbar" style="
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;">
+    <head>
+        <meta charset="UTF-8">
 
-		<div>
-			<a href="index.html">About</a>
-		</div>
-		
-		<div>
-			<a href="projects.html">Projects</a>
-		</div>
-		
-		<div>
-			<a href="skills.html">Skills</a>
-		</div>
-		
-		<div>
-			<a href="contact.html">Contact</a>
-		</div>	
-	</div>
-	
-	<div class="body" style="
-		display:grid;
-		grid-template-columns: 1fr 1fr;">
-		
-		<div>
-		
-			<div class="name">
-				Natasha R. Phillips
-			</div>
-			
-			<div class="job_title">
-				< engineering_student >
-			</div>
-			
-			<div class="about_me">
-				I am a computer engineering student passionate about web design and 
-				software development. My academic journey and hands-on coding projects 
-				have equipped me with strong technical skills and a keen eye for detail, 
-				enabling me to create innovative and user-friendly web solutions.
-			</div>
-		</div>
-		
-		<div>
-			<img class="space_image" src="study.png" alt="Image of Space">
-		</div>
-	</div>
-	
-	<div style="
-		display:grid;
-		grid-template-columns: 1fr;">
-		
-		<div class="footer">
-			Last Update: June 2024  
-		</div>
-	</div>
-</body>
+        <title>Natasha R. Phillips</title>
+
+        <!-- Responsive Design (width & zoom)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Load Zeyada font from Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Zeyada" rel="stylesheet">
+        
+        <!-- Cascading Style Sheets -->
+        <link rel="stylesheet" href="styles/index.css">  
+        <link rel="stylesheet" href="styles/shared.css">    
+    </head>
+
+    <body>
+        <!-- NAV BAR -->
+        <nav class="navbar">
+            <a class="navbar-link" href="index.html">About</a>
+            <a class="navbar-link" href="projects.html">Projects</a>
+            <a class="navbar-link" href="skills.html">Skills</a>
+            <a class="navbar-link" href="contact.html">Contact</a>         
+        </nav>
+
+        <!-- BODY -->                   
+        <div class="body">
+
+            <!-- Left Column -->
+		    <div class="left-column">
+		        <div class="name">
+				    <h1>Natasha R. Phillips</h1>
+			    </div>
+
+			    <div class="job-title">
+                    <h2>&lt;engineering_student&gt;</h2>	    
+                </div>
+
+			    <div class="about-me">
+                    <p>
+                        Hello! I’m a computer engineering student at the University of Central Florida with a strong interest 
+                        in the space industry. I’m fascinated by space, mathematics, and computers, and I'm always 
+                        looking for ways to combine these interests in my work. My academic journey has been a bit 
+                        unconventional, but I love diving into hands-on projects that challenge my skills. I’m 
+                        particularly excited about the idea of contributing to fields like aerospace engineering, 
+                        satellite technology, or even software development for space missions. There’s so much potential 
+                        in this area, and I’m eager to explore where I can make an impact.
+                    </p>
+                </div>  
+		    </div>
+
+            <!-- Right Column -->
+		    <div class="right-column">
+			    <img class="image-avatar" src="images/index/avatar.png">
+		    </div>
+	    </div>      
+
+        <!-- FOOTER -->  
+        <div class="footer">
+            Last Update: October 2024 &nbsp;
+        </div>
+    </body>
+
 </html>

@@ -1,0 +1,28 @@
+h2 {
+    color: powderblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+	color: white;
+    font-size: 1.5rem;
+	text-align: center;
+}
+
+.body {
+    background-color: #161511;
+    display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.left-column {
+    line-height: .3rem;
+    padding-top: 25%;
+}
+
+.image-skills {
+    display: block;
+    height: auto;
+    width: 96%;
+}

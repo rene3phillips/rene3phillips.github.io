@@ -1,0 +1,44 @@
+.body {
+	background-image: url('../images/index/background.jpeg');
+	background-position: center; 
+	display: flex; /* left-column, right-column */
+	padding: 2.5rem;
+}
+
+.left-column, .right-column {
+	padding: 2.5rem;
+	width: 50%;
+}
+
+.left-column {
+	display: flex;
+	flex-direction: column;
+	text-align: center; 
+}
+
+.name, .job-title, .about-me {
+	text-shadow: .2rem .2rem .1rem black; /* horizontal, vertical, blur, color */
+}
+
+.name {
+	color: yellow;
+	font-family: "Zeyada";
+	font-size: 2.5rem;
+	margin-bottom: -5rem; /* fixes extra space between .name and .job-title */
+}
+
+.job-title {
+	color: powderblue;
+}
+
+.about-me {
+	color: white;
+	line-height: 1.5rem; /* vertical space between text */
+	text-align: justify; 
+	text-indent: 3rem; /* first line indentation */
+}
+
+.image-avatar {
+	display: block; /* maximum control for styling */
+	width: 100%; /* width of image fills entire right column */ 
+}

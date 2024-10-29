@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Natasha R. Phillips - Tic Tac Toe</title>
+
+        <!-- Responsive Design (width & zoom)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- DynaPuff -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Jersey+20&family=Pixelify+Sans:wght@700&family=Tourney:ital,wght@0,100..900;1,100..900&family=Zeyada&display=swap" rel="stylesheet">
+
+        <!-- Cascading Style Sheets -->
+        <link rel="stylesheet" href="styles/tic-tac-toe.css">  
+        <link rel="stylesheet" href="styles/shared.css">    
+    </head>
+
+    <body>
+        <!-- NAV BAR -->
+        <nav class="navbar">
+            <a class="navbar-link" href="index.html">About</a>
+            <a class="navbar-link" href="projects.html">Projects</a>
+            <a class="navbar-link" href="skills.html">Skills</a>
+            <a class="navbar-link" href="contact.html">Contact</a>         
+        </nav>
+    
+        <!-- BODY -->      
+        <h1>Tic-Tac-Toe</h1>
+
+        <table>
+            <tr>
+                <td class="cell" id="0"></td>
+                <td class="cell" id="1"></td>
+                <td class="cell" id="2"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="3"></td>
+                <td class="cell" id="4"></td>
+                <td class="cell" id="5"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="6"></td>
+                <td class="cell" id="7"></td>
+                <td class="cell" id="8"></td>
+            </tr>
+        </table>
+
+        <div class="endgame">
+            <div class="text"></div>
+            <button onClick="startGame()">Replay</button>
+        </div>
+
+        <!-- FOOTER -->  
+        <div class="footer">
+            Last Update: October 2024 &nbsp;
+        </div>
+
+        <script src="scripts/tic-tac-toe.js"></script>
+    
+    </body>
+
+</html>

@@ -1,0 +1,46 @@
+/* BODY */
+body {
+    background-color: black; 
+    box-sizing: border-box; /* ensure padding and border are included in width/height calculations */
+    font-family: "Verdana", sans-serif; 
+    font-size: 16px; /* base font size */
+    height: 100vh; /* full viewport height */
+    width: 100vw; /* full viewport width */
+    margin: 0; /* remove default margin */
+    overflow: hidden; /* prevent scrolling */
+}
+
+/* NAVBAR */
+.navbar {
+	background-color: purple;
+	display: flex;
+	font-size: 2rem; 
+	justify-content: space-between; /* add an even amount of space between content */
+	padding: 0.75rem 7.5rem; 
+	text-shadow: .2rem .2rem .5rem black; /* horizontal, vertical, blur, color */
+}
+
+.navbar-link {
+	color: white;
+	text-decoration: none;
+	transition: color .15s, opacity .15s; 
+}
+
+.navbar-link:active {
+	opacity: 75%;
+}
+
+.navbar-link:hover {
+	color: yellow;
+}
+
+/* FOOTER */
+.footer {
+	background-color: teal;
+	bottom: 0;
+	font-size: 1rem;
+	padding: .75rem 0; 
+	position: fixed;  /* remains in place when page scrolls */
+	text-align: right;
+	width: 100vw;
+}

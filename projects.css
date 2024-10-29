@@ -1,0 +1,61 @@
+.body {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 7%;
+}
+
+.project-item {
+    background-color: powderblue;
+    border: .2rem solid yellow;
+    color: black;
+    height: 60vh;
+    width: 30vw;
+    text-align: center;
+    text-decoration: none;
+	transition: opacity .15s;
+}
+
+.project-item:hover {
+	opacity: 75%;
+}
+
+.project-item:active {
+	opacity: 50%;
+}
+
+.image-alien, .image-checklist, .image-storm {
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 70%;
+    width: 100%;
+}
+
+.image-alien {
+    background-image: url('../images/projects/tic-tac-toe.png');
+}
+
+.image-checklist {
+	background-image: url('../images/projects/online-store.jpeg');
+}
+
+.image-storm {
+	background-image: url('../images/projects/weather-app.jpeg');
+}
+
+.project-title {
+	font-size: 2rem;
+	font-weight: bold;
+	padding: .3rem;
+}
+
+.description {
+    padding: 0 .3rem;
+}
+
+.keywords {
+    
+    display: flex;
+    font-weight: bold;
+    justify-content: space-evenly;
+    padding-top: .8rem;
+}

@@ -1,66 +1,54 @@
 <!DOCTYPE html>
-<html lang="en"> 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<title>Natasha R. Phillips</title>
-	<link rel="stylesheet" href="styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
-</head>
-<body>
+<html lang="en">
 
-	<div class="navbar" style="
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;">
+    <head>
+        <meta charset="UTF-8">
 
-		<div>
-			<a href="index.html">About</a>
-		</div>
-		
-		<div>
-			<a href="projects.html">Projects</a>
-		</div>
-		
-		<div>
-			<a href="skills.html">Skills</a>
-		</div>
-		
-		<div>
-			<a href="contact.html">Contact</a>
-		</div>	
-	</div>
+        <title>Natasha R. Phillips - Skills</title>
+
+        <!-- Responsive Design (width & zoom)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Cascading Style Sheets -->
+        <link rel="stylesheet" href="styles/skills.css">  
+        <link rel="stylesheet" href="styles/shared.css">    
+    </head>
+
+    <body>
+        <!-- NAV BAR -->
+        <nav class="navbar">
+            <a class="navbar-link" href="index.html">About</a>
+            <a class="navbar-link" href="projects.html">Projects</a>
+            <a class="navbar-link" href="skills.html">Skills</a>
+            <a class="navbar-link" href="contact.html">Contact</a>         
+        </nav>
+        <!-- LEFT COLUMN -->
+        <div class="body">
+            <div class="left-column">
+                <h2>Programming Languages:</h2>
+                <p>C, C++, Python, JavaScript</p>
+                <br>
+
+                <h2>Web Development:</h2>
+                <p>HTML, CSS</p>
+                <br>
+
+                <h2>Version Control:</h2>
+                <p>Git, GitHub</p>
+                <br>
+
+                <h2>Operating Systems:</h2>
+                <p>MacOS, Windows</p>
+            </div>
+            <!-- RIGHT COLUMN -->
+            <div>
+                <img class="image-skills" src="images/skills/avatar.jpeg">
+	        </div>
+        </div>
 	
-	<div class="skills" style="
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		">
-		<div class="skills_text">
-			<div class="bold_text_blue">Programming Languages:</div>
-			<div>C, C++, Python, JavaScript</div><br>
-		
-			<div class="bold_text_blue">Web Development:</div> 
-			<div>HTML, CSS</div><br>
-		
-			<div class="bold_text_blue">Version Control:</div> 
-			<div>Git, GitHub</div><br>
-		
-			<div class="bold_text_blue">Operating Systems:</div> 
-			<div>MacOS, Windows</div>
-		</div>
-		<div>
-			<img class="skills_photo" src="skills.jpeg">
-		</div>
-	</div>
-	
-	<div style="
-		display:grid;
-		grid-template-columns: 1fr;">
-		
-		<div class="footer">
-			Last Update: June 2024
-		</div>
-	</div>
-</body>
+        <!-- FOOTER -->  
+        <div class="footer">
+            Last Update: October 2024 &nbsp;
+        </div>
+    </body>
 </html>

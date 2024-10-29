@@ -1,0 +1,56 @@
+h3 {
+    color: powderblue;
+}
+
+p {
+    color: white;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.left-column {
+    left: 0;
+    top: 0;
+    margin-left: 15%; 
+    margin-top: 5%;
+    position: relative;
+}
+
+.background-contact-space, .image-contact-avatar {
+    border: 6px teal solid;
+    border-radius: 50%;
+    display: block;
+    height: auto;   
+    width: 85%;
+    left: 30px;
+    top: 30px;
+
+}
+
+.background-contact-space {
+    position: relative;
+}
+
+
+.image-contact-avatar {
+    position: absolute;
+}
+
+.right-column {
+    font-size: 1.5rem;
+    line-height: .3rem;
+    margin-right: 15%;
+    padding-top: 18%;  
+	text-align: center;
+}
+
+.contact-name {
+    color: yellow;
+    font-family: "Zeyada";
+	font-size: 200%;
+    padding: 20px;
+}

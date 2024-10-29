@@ -1,85 +1,86 @@
 <!DOCTYPE html>
-<html lang="en"> 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<title>Natasha R. Phillips</title>
-	<link rel="stylesheet" href="styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
-</head>
-<body>
+<html lang="en">
 
-	<div class="navbar" style="
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;">
+    <head>
+        <meta charset="UTF-8">
 
-		<div>
-			<a href="index.html">About</a>
-		</div>
-		
-		<div>
-			<a href="projects.html">Projects</a>
-		</div>
-		
-		<div>
-			<a href="skills.html">Skills</a>
-		</div>
-		
-		<div>
-			<a href="contact.html">Contact</a>
-		</div>	
-	</div>
-	
-	<div class="projects" style="
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;">
-		
-		<div class="project">
-		
-			<div class="calculator"></div>
-			
-			<div class="project_title">Budgeting App</div>
-			
-			<div class="description">
-				A personal budget app that helps you track income and expenses, 
-				set budgets, and visualize spending with easy-to-read charts. 
-			</div>
-		</div>
-		
-		<div class="project">
-		
-			<div class="tictactoe"></div>
-			
-			<div class="project_title">Tic-Tac-Toe Game</div>
-			
-			<div class="description">
-				A tic-tac-toe game where you can play against the computer or a friend.
-			</div>
-		</div>
-	
-		<div class="project">
-		
-			<div class="storm"></div>
-	
-			<div class="project_title">Weather App</div>
-			
-			<div class="description">
-				A weather app that shows real-time weather updates based on your 
-				location using the OpenWeatherMap API. It gives you current conditions, 
-				hourly forecasts, and daily outlooks, all in a simple, easy-to-use design.
-			</div>
-		</div>		
-	</div>
+        <title>Natasha R. Phillips - Projects</title>
 
-	<div style="
-		display:grid;
-		grid-template-columns: 1fr;">
-		
-		<div class="footer">
-			Last Update: June 2024
-		</div>
-	</div>
-</body>
+        <!-- Responsive Design (width & zoom)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Cascading Style Sheets -->
+        <link rel="stylesheet" href="styles/projects.css">  
+        <link rel="stylesheet" href="styles/shared.css">    
+    </head>
+
+    <body>
+        <!-- NAV BAR -->
+        <nav class="navbar">
+            <a class="navbar-link" href="index.html">About</a>
+            <a class="navbar-link" href="projects.html">Projects</a>
+            <a class="navbar-link" href="skills.html">Skills</a>
+            <a class="navbar-link" href="contact.html">Contact</a>         
+        </nav>
+
+        <!-- BODY -->                   
+        <div class="body">
+
+            <a class="project-item" href="tic-tac-toe.html">
+                <div class="image-alien">
+                </div>
+                <div class="project-title">
+                   Tic-Tac-Toe Game
+                </div>
+                <div class="description">
+                    A Tic-Tac-Toe game where you can challenge the unbeatable <b>Minimax AI</b>! Good luck!
+                </div>
+                <div class="keywords">
+                    <div>HTML</div>
+                    <div>CSS</div>
+                    <div>JavaScript</div>
+                    <div>Git</div>
+                </div>
+            </a>
+
+            <a class="project-item" href="90s-replay.html">
+                <div class="image-checklist">
+                </div>
+                <div class="project-title">
+                    Online Store 
+                </div>
+                <div class="description">
+                    A nostalgic <b>eCommerce</b> site where you can find retro games and memorabilia from the '90s! 
+                </div>  
+                <div class="keywords">
+                    <div>HTML</div>
+                    <div>CSS</div>
+                    <div>JavaScript</div>
+                    <div>Git</div>
+                </div>
+            </a>               
+                
+            <a class="project-item" href="weather-app.html">
+                <div class="image-storm">
+                </div>
+                <div class="project-title">
+                    Weather App
+                </div>
+                <div class="description">
+                    A weather app providing real-time updates based on your location with <b>OpenWeatherMap API</b>.
+                </div>   
+                <div class="keywords">
+                    <div>HTML</div>
+                    <div>CSS</div>
+                    <div>JavaScript</div>
+                    <div>Git</div>
+                </div>               
+            </a>
+        </div>
+
+        <!-- FOOTER -->  
+        <div class="footer">
+            Last Update: October 2024 &nbsp;
+        </div>
+    </body>
 </html>
