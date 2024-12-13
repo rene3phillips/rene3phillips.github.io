@@ -1,12 +1,12 @@
-/* Overall Background */
+/* Background */
 body {
   background-image: url('../images/contact/background.jpeg');
 }
 
 /* Banner */
 .banner {
-  height: 95vh; /* due footer */
-  width: 100%;
+  height: 100vh; 
+  width: 100vw;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -48,7 +48,7 @@ body {
       translateZ(550px); 
 }
 
-/* Image on each Item */
+/* Image on Each Item */
 .banner .slider .item img {
   filter: brightness(1.2) drop-shadow(0 0  50px black); /* shadow effect */
   height: auto;
@@ -110,7 +110,7 @@ body {
 /* Avatar */
 .banner .content .model {
   background-image: url(../images/contact/avatar.png);
-  bottom: 0;
+  bottom: 0; /**/
   left: 0;
   height: 75vh;
   width: 100%;
@@ -126,9 +126,181 @@ body {
   box-shadow: 0 0 20px 5px rgba(0, 128, 128, 0.438) !important;
 }
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN */
 
-/* max-width 480, min width 360 */
+/* XL Devices (Large Desktops) */
+/* min-width: 1281 */
+/* Heights to Test: 800, 900, 1080, 1200 */
+/* Devices to Test: 1920x1080, 2560x1440, 3840x2160 */
+@media (max-width: 1400px) {
+  .banner .content {
+    bottom: 36px; /* Default: 0 */
+  }
+
+  /* 'Contact' Text */
+  .banner .content h1 {
+    font-size: 12em; /* Default: 12em */
+    padding-bottom: 25%;
+  }
+
+  /* 'Me' Text */
+  .me {
+    display: none;
+  }
+
+  /* Banner */
+  .banner .slider {
+    height: 250px; /* Default: 250px */
+    width: 200px; /* Default: 200px */
+  }
+}
+
+/* Large Devices (Laptops, Desktops) */
+/* min-width: 1025px */
+/* Heights to Test: 720, 800, 900 */
+/* Devices to Test: 1366x768, 1280x800 */
+@media (max-width: 1280px) {
+  .banner .content {
+    bottom: 36px; /* Default: 0 */
+  }
+
+  /* 'Contact' Text */
+  .banner .content h1 {
+    font-size: 10em; /* Default: 12em */
+    padding-bottom: 25%;
+  }
+
+  /* 'Me' Text */
+  .me {
+    display: none;
+  }
+
+  /* Banner */
+  .banner .slider {
+    height: 230px; /* Default: 250px */
+    width: 180px; /* Default: 200px */
+  }
+}
+
+/* Medium Devices (Tablets) */
+/* min-width: 768px */
+/* Heights to Test: 1024, 1112, 1366 */
+/* Devices to Test: 768x1024, 834x1112, 1024x1366 */
+@media (max-width: 1024px) {
+  .banner .content {
+    bottom: 36px; /* Default: 0 */
+  }
+
+  /* 'Contact' Text */
+  .banner .content h1 {
+    font-size: 8em; /* Default: 12em */
+    padding-bottom: 25%;
+  }
+
+  /* 'Me' Text */
+  .me {
+    display: none;
+  }
+
+  /* Banner */
+  .banner .slider {
+    height: 220px; /* Default: 250px */
+    width: 170px; /* Default: 200px */
+  }
+}
+
+/* Small Devices (Large Phones) */
+/* min-width: 481px */
+/* Heights to Test: 720, 800, 896, 926 */
+/* Devices to Test: 360x800, 428x926, 412x900 */
+@media (max-width: 767px) {
+
+  /* Avatar & 'Contact' Text */
+  .banner .content {
+    bottom: 36px; /* Default: 0 */
+  }
+
+  /* 'Contact' Text */
+  .banner .content h1 {
+    font-size: 6em; /* Default: 12em */
+    padding-bottom: 25%;
+  }
+
+  /* 'Me' Text */
+  .me {
+    display: none;
+  }
+
+  /* Banner */
+  .banner .slider {
+    height: 210px; /* Default: 250px */
+    width: 160px; /* Default: 200px */
+  }
+}
+
+/* XS Devices (Small Phones) */
+/* Heights to Test: 568, 667, 812, 844 */
+/* Devices to Test: 375x667, 375x812, 393x844 */
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* Avatar & 'Contact' Text */
+  .banner .content {
+    bottom: 36px; /* Default: 0 */
+  }
+
+  /* 'Contact' Text */
+  .banner .content h1 {
+    font-size: 4em; /* Default: 12em */
+    padding-bottom: 25%;
+
+  }
+
+  /* 'Me' Text */
+  .me {
+    display: none;
+  }
+
+  /* Banner */
+  .banner .slider {
+    height: 200px; /* Default: 250px */
+    width: 150px; /* Default: 200px */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* max-width 480, min width 360 *//*
 @media (max-width: 480px) {
   .banner .content {
     padding-top: 100px;
