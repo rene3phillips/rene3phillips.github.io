@@ -1,0 +1,131 @@
+/* Base Styles */
+body {
+  background-color: #563478;
+}
+
+/* Hamburger Menu */
+header {
+  z-index: 100;
+}
+
+/* Parallax */
+.parallax {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vw / 1.439);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Parallax Images */
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+/* Avatar Animation */
+#avatar {
+  display: inline-block;
+  animation: bobbing 2s ease-in-out infinite;
+}
+
+@keyframes bobbing {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Name */
+.name {
+  color: white;
+  font-family: "Zeyada", cursive;
+  position: absolute;
+  text-shadow: 2px 2px 4px black;
+  font-size: 3em;
+  top: 100px;
+  left: 15px;
+}
+
+/* About Me Section */
+.about-me-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.about-me-container {
+  text-align: center;
+  color: white;
+  margin: 0 auto;
+  width: 80%;
+  padding: 50px 0 100px 0;
+}
+
+.about-me-container p {
+  margin: 20px;
+  text-align: justify;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.hello {
+  color: yellow;
+  font-family: "Zeyada", cursive;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.about-me-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-me-container a {
+  color: yellow;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.about-me-container a:hover {
+  opacity: 1;
+}
+
+/* Responsive Design */
+
+/* max-width 480, min width 360 */
+/*@media (max-width: 480px) {
+  .name {
+    font-size: 25px;
+    padding-top: calc((100vw / 1.439)/6);
+  }
+}*/
+
+@media (max-width: 768px) {
+  .name {
+    font-size: 35px !important;
+    padding-top: calc((100vw / 1.439)/6);
+  }
+}
+
+@media (max-width: 1024px) {
+  .name {
+    font-size: 60px;
+    padding-top: calc((100vw / 1.439)/6);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .name {
+    font-size: 75px;
+    padding-top: calc((100vw / 1.439)/6);
+  }
+}

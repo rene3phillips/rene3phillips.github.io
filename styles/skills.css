@@ -1,0 +1,45 @@
+body {
+  height: 100vh;
+}
+
+h2 {
+    color: powderblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+	color: white;
+  font-size: 1.5rem;
+	text-align: center;
+}
+
+.body {
+  background-color: #161511;
+  height: 100%;
+  display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.left-column {
+  padding-top: 35%;
+}
+
+.right-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%
+}
+
+
+.image-skills {
+  display: block;
+  height: auto;
+  width: 96%;
+}
+
+/* Footer */
+.footer {
+  box-shadow: 0 0 20px 5px rgba(0, 128, 128, 0.438) !important;
+}

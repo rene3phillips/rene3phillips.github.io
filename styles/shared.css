@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  font-family: "Verdana", sans-serif; /* default and backup font for entire website */
+  margin: 0;
+  padding: 0;
+}
+
+/* HAM MENU */
+/* Nav Bar - Horizontal */
+.off-screen-menu {
+  background-color: #482c65;
+  width: 100vw;
+  height: 10%;
+  max-height: 25vw;
+  position: fixed; /* menu is fixed in the same position when scrolling */
+  left: 0;
+  top: -200px; /* by default, the menu is located off of the screen */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; 
+  align-items: center; /* align links (items) to the left */
+  font-size: 2rem;
+  transition: 1s ease; /* text animation */
+  box-shadow: 0 0 20px 5px #35204a;
+  z-index: 100;
+}
+.off-screen-menu.active {
+  top: 0; /* when active, the menu is no longer located off of the screen */
+}
+/* Nav Bar - Vertical */
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: clear;
+}
+/* Ham Icon */
+.ham-menu {
+  height: 50px;
+  width: 50px;
+  margin-right: auto;
+  position: relative;
+  cursor: pointer;
+  position: fixed;
+  left: 1rem;
+  top: .5rem;
+  z-index: 1000;
+}
+.ham-menu:hover {
+  opacity: 75%;
+}
+.ham-menu span {
+  height: 5px;
+  width: 100%;
+  background-color: teal;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+  top: 25%
+}
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, 50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, 50%) rotate(-45deg);
+}
+/* Links */
+.nav-bar-link {
+  text-decoration: none;
+  color: white;
+  text-shadow: .2rem .2rem .2rem black; /* horizontal, vertical, blur, color */
+  transition: color .4s ease-in-out 0s, opacity .4s ease-in-out 0s; /* transition, transition length, ease in/out, delay */
+}
+.nav-bar-link.active {
+  color: yellow;
+}
+.nav-bar-link:active {
+opacity: 75%;
+}
+.nav-bar-link:hover {
+  color: yellow;
+}
+/* Changes Color of 'X' Icon While Scrolling */
+.ham-menu.scrolled span {
+  background-color: yellow; 
+}
+
+/* FOOTER */
+.footer {
+background-color: teal;
+bottom: 0;
+font-size: 1rem;
+padding: .75rem; 
+text-align: right;
+width: 100vw;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 20px 5px #35204a;
+  position: fixed;
+}
+
