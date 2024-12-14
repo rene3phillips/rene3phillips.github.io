@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: "Verdana", sans-serif; /* default and backup font for entire website */
-  margin: 0;
+  font-family: "Verdana", sans-serif;
   padding: 0;
 }
 
@@ -111,3 +110,46 @@ width: 100vw;
   position: fixed;
 }
 
+/* RESPONSIVE DESIGN */
+
+/* Small Devices (Large Phones) */
+/* min-width: 481px */
+/* Heights to Test: 720, 800, 896, 926 */
+/* Devices to Test: 360x800, 428x926, 412x900 */
+@media (max-width: 767px) {
+
+  /* Nav Bar - Horizontal */
+  .off-screen-menu {
+    padding-top: 15px;
+    width: 50vw; 
+    height: 50%;
+    max-height: 50vh; 
+    left: -250px;
+    top: 0; /* by default, the menu is located off of the screen */
+    flex-direction: column; 
+  }
+  .off-screen-menu.active {
+    left: 0; /* when active, the menu is no longer located off of the screen */
+  }
+}
+
+/* XS Devices (Small Phones) */
+/* Heights to Test: 568, 667, 812, 844 */
+/* Devices to Test: 375x667, 375x812, 393x844 */
+@media (min-width: 320px) and (max-width: 480px) {
+
+  /* Nav Bar - Horizontal */
+  .off-screen-menu {
+    padding-top: 30px;
+    width: 50vw; 
+    height: 50%;
+    max-height: 50vh; 
+    left: -250px;
+    top: 0; /* by default, the menu is located off of the screen */
+    flex-direction: column; 
+  }
+  .off-screen-menu.active {
+    left: 0; /* when active, the menu is no longer located off of the screen */
+  }
+
+}
