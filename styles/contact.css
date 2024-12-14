@@ -69,7 +69,6 @@ body {
 
 /* Content Under Slider */
 .banner .content {
-  align-items: center;
   justify-content: center;
   bottom: 0;
   left: 50%;
@@ -80,12 +79,18 @@ body {
   position: absolute;
   transform: translateX(-50%);
   z-index: 1;
+  bottom: 36px;
+
+
 }
+
 .banner .content h1 {
   color: teal;
   font-size: 12em; 
-  line-height: 1em;
   position: relative;
+  margin: 0;
+  padding: 0;
+  line-height: 0.5;
 }
 
 /* See-through Header Effect */
@@ -99,12 +104,13 @@ body {
 }
 
 /* Cursive Font - "Me" */
-.me {
+.banner .content .me {
   color: yellow;
   font-family: "Zeyada";
   font-size: 150px; 
-  margin: -60px 10px 0 600px;
-  text-align: center;
+  margin: 0;
+  padding-left: 75%;
+  line-height: 0.5;
 }
 
 /* Avatar */
@@ -131,22 +137,19 @@ body {
 /* XL Devices (Large Desktops) */
 /* min-width: 1281 */
 /* Heights to Test: 800, 900, 1080, 1200 */
-/* Devices to Test: 1920x1080, 2560x1440, 3840x2160 */
 @media (max-width: 1400px) {
-  .banner .content {
-    bottom: 36px; /* Default: 0 */
-  }
+
 
   /* 'Contact' Text */
   .banner .content h1 {
     font-size: 12em; /* Default: 12em */
-    padding-bottom: 25%;
   }
 
-  /* 'Me' Text */
-  .me {
-    display: none;
+  .banner .content .me {
+    font-size: 150px;
   }
+
+
 
   /* Banner */
   .banner .slider {
@@ -160,20 +163,17 @@ body {
 /* Heights to Test: 720, 800, 900 */
 /* Devices to Test: 1366x768, 1280x800 */
 @media (max-width: 1280px) {
-  .banner .content {
-    bottom: 36px; /* Default: 0 */
-  }
+
 
   /* 'Contact' Text */
   .banner .content h1 {
     font-size: 10em; /* Default: 12em */
-    padding-bottom: 25%;
   }
 
-  /* 'Me' Text */
-  .me {
-    display: none;
+  .banner .content .me {
+    font-size: 125px;
   }
+
 
   /* Banner */
   .banner .slider {
@@ -187,20 +187,17 @@ body {
 /* Heights to Test: 1024, 1112, 1366 */
 /* Devices to Test: 768x1024, 834x1112, 1024x1366 */
 @media (max-width: 1024px) {
-  .banner .content {
-    bottom: 36px; /* Default: 0 */
-  }
+
 
   /* 'Contact' Text */
   .banner .content h1 {
     font-size: 8em; /* Default: 12em */
-    padding-bottom: 25%;
   }
 
-  /* 'Me' Text */
-  .me {
-    display: none;
+  .banner .content .me {
+    font-size: 100px;
   }
+
 
   /* Banner */
   .banner .slider {
@@ -215,21 +212,17 @@ body {
 /* Devices to Test: 360x800, 428x926, 412x900 */
 @media (max-width: 767px) {
 
-  /* Avatar & 'Contact' Text */
-  .banner .content {
-    bottom: 36px; /* Default: 0 */
-  }
+
 
   /* 'Contact' Text */
   .banner .content h1 {
     font-size: 6em; /* Default: 12em */
-    padding-bottom: 25%;
   }
 
-  /* 'Me' Text */
-  .me {
-    display: none;
+  .banner .content .me {
+    font-size: 75px;
   }
+
 
   /* Banner */
   .banner .slider {
@@ -243,22 +236,18 @@ body {
 /* Devices to Test: 375x667, 375x812, 393x844 */
 @media (min-width: 320px) and (max-width: 480px) {
 
-  /* Avatar & 'Contact' Text */
-  .banner .content {
-    bottom: 36px; /* Default: 0 */
-  }
+
 
   /* 'Contact' Text */
   .banner .content h1 {
     font-size: 4em; /* Default: 12em */
-    padding-bottom: 25%;
 
   }
 
-  /* 'Me' Text */
-  .me {
-    display: none;
+  .banner .content .me {
+    font-size: 50px;
   }
+
 
   /* Banner */
   .banner .slider {
@@ -266,8 +255,3 @@ body {
     width: 150px; /* Default: 200px */
   }
 }
-
-
-
-
-

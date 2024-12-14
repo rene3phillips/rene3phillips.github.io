@@ -101,13 +101,19 @@ header {
 
 /* Responsive Design */
 
-/* max-width 480, min width 360 */
-/*@media (max-width: 480px) {
+@media (min-width: 1025px) {
   .name {
-    font-size: 25px;
+    font-size: 75px;
     padding-top: calc((100vw / 1.439)/6);
   }
-}*/
+}
+
+@media (max-width: 1024px) {
+   .name {
+    font-size: 60px;
+    padding-top: calc((100vw / 1.439)/6);
+  }
+}
 
 @media (max-width: 768px) {
   .name {
@@ -116,16 +122,10 @@ header {
   }
 }
 
-@media (max-width: 1024px) {
+/* max-width 480, min width 360 */
+@media (max-width: 480px) {
   .name {
-    font-size: 60px;
-    padding-top: calc((100vw / 1.439)/6);
-  }
-}
-
-@media (min-width: 1025px) and (max-width: 1200px) {
-  .name {
-    font-size: 75px;
+    font-size: 25px;
     padding-top: calc((100vw / 1.439)/6);
   }
 }

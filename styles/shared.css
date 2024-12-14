@@ -2,6 +2,7 @@
   box-sizing: border-box;
   font-family: "Verdana", sans-serif;
   padding: 0;
+  margin: 0;
 }
 
 /* HAM MENU */
@@ -124,7 +125,7 @@ width: 100vw;
     width: 50vw; 
     height: 50%;
     max-height: 50vh; 
-    left: -250px;
+    left: -350px;
     top: 0; /* by default, the menu is located off of the screen */
     flex-direction: column; 
   }
