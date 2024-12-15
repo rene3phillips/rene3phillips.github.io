@@ -65,3 +65,125 @@ body {
     justify-content: space-evenly;
     padding-top: .8rem;
 }
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+/* XL Devices (Large Desktops) */
+/* min-width: 1281 */
+/* Heights to Test: 800, 900, 1080, 1200 */
+@media (max-width: 1400px) {
+
+
+
+}
+
+/* Large Devices (Laptops, Desktops) */
+/* min-width: 1025px */
+/* Heights to Test: 720, 800, 900 */
+/* Devices to Test: 1366x768, 1280x800 */
+@media (max-width: 1280px) {
+
+
+}
+
+/* Medium Devices (Tablets) */
+/* min-width: 768px */
+/* Heights to Test: 1024, 1112, 1366 */
+/* Devices to Test: 768x1024, 834x1112, 1024x1366 */
+@media (max-width: 1024px) {
+
+    .project-title {
+        font-size: 1.25rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+
+    .keywords {
+        font-size: 1rem;
+    }
+
+    .project-item {
+
+  
+        height: 50vh;
+ 
+    }
+    
+
+}
+
+/* Small Devices (Large Phones) */
+/* min-width: 481px */
+/* Heights to Test: 720, 800, 896, 926 */
+/* Devices to Test: 360x800, 428x926, 412x900 */
+@media (max-width: 767px) {
+
+    .project-title {
+        font-size: 1.25rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+
+    .keywords {
+        font-size: 1rem;
+    }
+
+    .project-item {
+
+  
+        height: 50vh;
+        width: 100vw;
+ 
+    }
+    
+    .body {
+        flex-direction: column;
+        padding-bottom: 75px;
+    }
+
+
+}
+
+/* XS Devices (Small Phones) */
+/* Heights to Test: 568, 667, 812, 844 */
+/* Devices to Test: 375x667, 375x812, 393x844 */
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .project-title {
+        font-size: 1.25rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+
+    .keywords {
+        font-size: 1rem;
+    }
+
+    .project-item {
+
+  
+        height: 50vh;
+        width: 100vw;
+ 
+    }
+    
+    .body {
+        flex-direction: column;
+        padding-bottom: 75px;
+    }
+
+
+}
+
+}
