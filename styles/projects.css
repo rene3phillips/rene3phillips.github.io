@@ -3,30 +3,33 @@ body {
 }
 
 .body {
-    display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    padding-top: 7%;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
 }
 
-.project-item {
+a.project-item {
     background-color: powderblue;
     border: .2rem solid yellow;
     color: black;
-    height: 60vh;
+    height: 500px;
     width: 31vw;
-    text-align: center;
     justify-items: center;
-    text-decoration: none;
-	transition: opacity .15s;
+    margin-bottom: 50px;
     margin-top: 50px;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity .15s;
 }
 
-.project-item:hover {
-	opacity: 75%;
+a.project-item:hover {
+    opacity: 75%;
 }
 
-.project-item:active {
-	opacity: 50%;
+a.project-item:active {
+    opacity: 50%;
 }
 
 .image-alien, .image-checklist, .image-storm {
@@ -41,17 +44,17 @@ body {
 }
 
 .image-checklist {
-	background-image: url('../images/projects/online-store.jpeg');
+    background-image: url('../images/projects/online-store.jpeg');
 }
 
 .image-storm {
-	background-image: url('../images/projects/weather-app.jpeg');
+    background-image: url('../images/projects/weather-app.jpeg');
 }
 
 .project-title {
-	font-size: 2rem;
-	font-weight: bold;
-	padding: .3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: .3rem;
 }
 
 .description {
@@ -59,131 +62,105 @@ body {
 }
 
 .keywords {
-    
     display: flex;
     font-weight: bold;
     justify-content: space-evenly;
     padding-top: .8rem;
 }
 
-
-
-
-
-
 /* RESPONSIVE DESIGN */
 
+/* Portrait devices */
+@media (max-width: 844px) and (orientation: portrait) {
+    .body {
+        flex-direction: column;
+        height: 100%;
+        padding: 50px 0 50px 0;
+    }
+
+    a.project-item {
+        margin: 15px 0 15px 0;
+        width: 100vw;
+        min-height: 500px;
+    }
+}
+
+/* Landscape devices */
+@media (max-width: 844px) and (orientation: landscape) {
+    .body {
+        flex-direction: column;
+        height: 100%;
+        padding: 50px 0 50px 0;
+    }
+
+    a.project-item {
+        margin: 15px 0 15px 0;
+        width: 75vw;
+    }
+}
+
 /* XL Devices (Large Desktops) */
-/* min-width: 1281 */
-/* Heights to Test: 800, 900, 1080, 1200 */
 @media (max-width: 1400px) {
-
-
-
+    /* Add styles here if needed */
 }
 
 /* Large Devices (Laptops, Desktops) */
-/* min-width: 1025px */
-/* Heights to Test: 720, 800, 900 */
-/* Devices to Test: 1366x768, 1280x800 */
-@media (max-width: 1280px) {
-
-
+@media (min-width: 1025px) {
+    /* Add styles here if needed */
 }
 
 /* Medium Devices (Tablets) */
-/* min-width: 768px */
-/* Heights to Test: 1024, 1112, 1366 */
-/* Devices to Test: 768x1024, 834x1112, 1024x1366 */
-@media (max-width: 1024px) {
-
-    .project-title {
-        font-size: 1.25rem;
-    }
-    
-    .description {
-        font-size: 1rem;
+@media (max-width: 1366px) and (orientation: landscape) {
+    .body {
+        flex-direction: column;
+        height: 100%;
+        padding: 50px 0 50px 0;
     }
 
-    .keywords {
-        font-size: 1rem;
+    a.project-item {
+        margin: 15px 0 15px 0;
+        width: 75vw;
     }
-
-    .project-item {
-
-  
-        height: 50vh;
- 
-    }
-    
-
 }
 
 /* Small Devices (Large Phones) */
-/* min-width: 481px */
-/* Heights to Test: 720, 800, 896, 926 */
-/* Devices to Test: 360x800, 428x926, 412x900 */
-@media (max-width: 767px) {
-
-    .project-title {
-        font-size: 1.25rem;
-    }
-    
-    .description {
-        font-size: 1rem;
-    }
-
-    .keywords {
-        font-size: 1rem;
-    }
-
-    .project-item {
-
-  
-        height: 50vh;
-        width: 100vw;
- 
-    }
-    
+@media (max-width: 926px) and (orientation: landscape) {
     .body {
         flex-direction: column;
-        padding-bottom: 75px;
+        height: 100%;
+        padding: 50px 0 50px 0;
     }
 
-
+    a.project-item {
+        margin: 15px 0 15px 0;
+        width: 75vw;
+    }
 }
 
-/* XS Devices (Small Phones) */
-/* Heights to Test: 568, 667, 812, 844 */
-/* Devices to Test: 375x667, 375x812, 393x844 */
-@media (min-width: 320px) and (max-width: 480px) {
-
-    .project-title {
-        font-size: 1.25rem;
-    }
-    
-    .description {
-        font-size: 1rem;
-    }
-
-    .keywords {
-        font-size: 1rem;
-    }
-
-    .project-item {
-
-  
-        height: 50vh;
-        width: 100vw;
- 
-    }
-    
+@media (max-width: 767px) and (orientation: portrait) {
     .body {
         flex-direction: column;
-        padding-bottom: 75px;
+        height: 100%;
+        padding: 50px 0 50px 0;
     }
 
-
+    a.project-item {
+        margin: 15px 0 15px 0;
+        width: 100vw;
+        min-height: 500px;
+    }
 }
 
+@media (max-width: 480px) and (orientation: portrait) {
+    .body {
+        flex-direction: column;
+        height: 100%;
+        padding: 50px 0 50px 0;
+    }
+
+    a.project-item {
+        margin: 15px 0 15px 0;
+        width: 100vw;
+        min-height: 500px;
+    }
 }
