@@ -80,8 +80,6 @@ body {
   transform: translateX(-50%);
   z-index: 1;
   bottom: 36px;
-
-
 }
 
 .banner .content h1 {
@@ -134,124 +132,56 @@ body {
 
 /* RESPONSIVE DESIGN */
 
+/* Portrait devices */
+@media (max-width: 844px) and (orientation: portrait) {
+
+}
+
+/* Landscape devices */
+@media (max-width: 844px) and (orientation: landscape) {
+
+}
+
 /* XL Devices (Large Desktops) */
-/* min-width: 1281 */
-/* Heights to Test: 800, 900, 1080, 1200 */
 @media (max-width: 1400px) {
-
-
-  /* 'Contact' Text */
-  .banner .content h1 {
-    font-size: 12em; /* Default: 12em */
-  }
-
-  .banner .content .me {
-    font-size: 150px;
-  }
-
-
-
-  /* Banner */
-  .banner .slider {
-    height: 250px; /* Default: 250px */
-    width: 200px; /* Default: 200px */
-  }
+  /* Add styles here if needed */
 }
 
 /* Large Devices (Laptops, Desktops) */
-/* min-width: 1025px */
-/* Heights to Test: 720, 800, 900 */
-/* Devices to Test: 1366x768, 1280x800 */
-@media (max-width: 1280px) {
-
-
-  /* 'Contact' Text */
-  .banner .content h1 {
-    font-size: 10em; /* Default: 12em */
-  }
-
-  .banner .content .me {
-    font-size: 125px;
-  }
-
-
-  /* Banner */
-  .banner .slider {
-    height: 230px; /* Default: 250px */
-    width: 180px; /* Default: 200px */
-  }
+@media (min-width: 1025px) {
+  /* Add styles here if needed */
 }
 
 /* Medium Devices (Tablets) */
-/* min-width: 768px */
-/* Heights to Test: 1024, 1112, 1366 */
-/* Devices to Test: 768x1024, 834x1112, 1024x1366 */
-@media (max-width: 1024px) {
+@media (max-width: 1366px) and (orientation: landscape) {
 
+}
 
-  /* 'Contact' Text */
+/* Small Devices (Large Phones) */
+@media (max-width: 926px) and (orientation: landscape) {
+
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+
   .banner .content h1 {
-    font-size: 8em; /* Default: 12em */
+    font-size: 6rem;
   }
 
   .banner .content .me {
     font-size: 100px;
   }
 
-
-  /* Banner */
-  .banner .slider {
-    height: 220px; /* Default: 250px */
-    width: 170px; /* Default: 200px */
-  }
 }
 
-/* Small Devices (Large Phones) */
-/* min-width: 481px */
-/* Heights to Test: 720, 800, 896, 926 */
-/* Devices to Test: 360x800, 428x926, 412x900 */
-@media (max-width: 767px) {
+@media (max-width: 480px) and (orientation: portrait) {
 
-
-
-  /* 'Contact' Text */
   .banner .content h1 {
-    font-size: 6em; /* Default: 12em */
+    font-size: 5rem;
   }
 
   .banner .content .me {
     font-size: 75px;
   }
 
-
-  /* Banner */
-  .banner .slider {
-    height: 210px; /* Default: 250px */
-    width: 160px; /* Default: 200px */
-  }
-}
-
-/* XS Devices (Small Phones) */
-/* Heights to Test: 568, 667, 812, 844 */
-/* Devices to Test: 375x667, 375x812, 393x844 */
-@media (min-width: 320px) and (max-width: 480px) {
-
-
-
-  /* 'Contact' Text */
-  .banner .content h1 {
-    font-size: 4em; /* Default: 12em */
-
-  }
-
-  .banner .content .me {
-    font-size: 50px;
-  }
-
-
-  /* Banner */
-  .banner .slider {
-    height: 200px; /* Default: 250px */
-    width: 150px; /* Default: 200px */
-  }
 }
