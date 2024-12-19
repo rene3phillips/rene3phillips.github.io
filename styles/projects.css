@@ -32,7 +32,7 @@ a.project-item:active {
     opacity: 50%;
 }
 
-.image-alien, .image-checklist, .image-storm {
+.image-alien, .image-checklist, .image-bsky {
     background-position: 50% 50%;
     background-size: cover;
     height: 70%;
@@ -47,8 +47,8 @@ a.project-item:active {
     background-image: url('../images/projects/online-store.jpeg');
 }
 
-.image-storm {
-    background-image: url('../images/projects/weather-app.jpeg');
+.image-bsky {
+    background-image: url('../images/projects/bsky.jpg');
 }
 
 .project-title {
