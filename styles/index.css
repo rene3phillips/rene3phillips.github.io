@@ -48,9 +48,10 @@ header {
   font-family: "Zeyada", cursive;
   position: absolute;
   text-shadow: 2px 2px 4px black;
-  font-size: 3em;
-  top: 100px;
-  left: 15px;
+  font-size: 5rem;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
 }
 
 /* About Me Section */
@@ -70,7 +71,7 @@ header {
 }
 
 .about-me-container p {
-  margin: 20px;
+  margin: 30px 90px 30px 90px;
   text-align: justify;
   font-weight: 300;
   line-height: 2rem;
@@ -99,33 +100,62 @@ header {
   opacity: 1;
 }
 
-/* Responsive Design */
+/* RESPONSIVE DESIGN */
 
+/* Portrait devices */
+@media (max-width: 844px) and (orientation: portrait) {
+  .name {
+    font-size: 4rem;
+  }
+
+}
+
+/* Landscape devices */
+@media (max-width: 844px) and (orientation: landscape) {
+
+}
+
+/* XL Devices (Large Desktops) */
+@media (max-width: 1400px) {
+  /* Add styles here if needed */
+}
+
+/* Large Devices (Laptops, Desktops) */
 @media (min-width: 1025px) {
-  .name {
-    font-size: 75px;
-    padding-top: calc((100vw / 1.439)/6);
-  }
+  /* Add styles here if needed */
 }
 
-@media (max-width: 1024px) {
-   .name {
-    font-size: 60px;
-    padding-top: calc((100vw / 1.439)/6);
-  }
+/* Medium Devices (Tablets) */
+@media (max-width: 1366px) and (orientation: landscape) {
+
+
 }
 
-@media (max-width: 768px) {
+/* Small Devices (Large Phones) */
+@media (max-width: 926px) and (orientation: landscape) {
+
   .name {
-    font-size: 35px !important;
-    padding-top: calc((100vw / 1.439)/6);
+    font-size: 3rem;
   }
+
 }
 
-/* max-width 480, min width 360 */
-@media (max-width: 480px) {
+@media (max-width: 767px) and (orientation: portrait) {
+
   .name {
-    font-size: 25px;
-    padding-top: calc((100vw / 1.439)/6);
+    font-size: 3rem;
   }
+
+}
+
+@media (max-width: 480px) and (orientation: portrait) {
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .about-me-container p {
+    margin: 15px;
+  }
+
 }
