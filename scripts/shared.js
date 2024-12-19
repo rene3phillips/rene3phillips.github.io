@@ -25,3 +25,8 @@ window.addEventListener('scroll', () => {
     hamMenu.classList.remove('scrolled');
   }
 });
+
+// Clear menu state when navigating to a new page
+window.addEventListener('beforeunload', () => {
+  sessionStorage.removeItem('menuOpen');  // Clear menu state
+});
