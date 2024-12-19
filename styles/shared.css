@@ -111,13 +111,40 @@ width: 100vw;
   position: fixed;
 }
 
+
 /* RESPONSIVE DESIGN */
 
+/* Portrait devices */
+@media (max-width: 844px) and (orientation: portrait) {
+
+}
+
+/* Landscape devices */
+@media (max-width: 844px) and (orientation: landscape) {
+
+}
+
+/* XL Devices (Large Desktops) */
+@media (max-width: 1400px) {
+  /* Add styles here if needed */
+}
+
+/* Large Devices (Laptops, Desktops) */
+@media (min-width: 1025px) {
+  /* Add styles here if needed */
+}
+
+/* Medium Devices (Tablets) */
+@media (max-width: 1366px) and (orientation: landscape) {
+
+}
+
 /* Small Devices (Large Phones) */
-/* min-width: 481px */
-/* Heights to Test: 720, 800, 896, 926 */
-/* Devices to Test: 360x800, 428x926, 412x900 */
-@media (max-width: 767px) {
+@media (max-width: 926px) and (orientation: landscape) {
+
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
 
   /* Nav Bar - Horizontal */
   .off-screen-menu {
@@ -133,11 +160,7 @@ width: 100vw;
     left: 0; /* when active, the menu is no longer located off of the screen */
   }
 }
-
-/* XS Devices (Small Phones) */
-/* Heights to Test: 568, 667, 812, 844 */
-/* Devices to Test: 375x667, 375x812, 393x844 */
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 480px) and (orientation: portrait) {
 
   /* Nav Bar - Horizontal */
   .off-screen-menu {
@@ -152,5 +175,4 @@ width: 100vw;
   .off-screen-menu.active {
     left: 0; /* when active, the menu is no longer located off of the screen */
   }
-
 }
