@@ -1,6 +1,6 @@
 body {
-  background-image: url('background.jpeg');
-  background-size: cover;
+  background-color: #D5AFF4;  background-repeat: none;
+
 }
 
 h1 {
@@ -9,8 +9,6 @@ h1 {
   padding: 15px;
   font-family: "DynaPuff";
 }
-
-
 
 button {
   background-color: yellow;
@@ -41,16 +39,15 @@ cursor: pointer;
   color: white;
 }
 
-
-
 table {
 border-collapse: collapse;
 position: absolute;
-left: 36%;
-margin-left: 0;
-top: 10px;
-  margin-top: 200px;
-
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+height: 25vw;
+width: 25vw;
+table-layout: fixed;
 }
 
 table tr:first-child td {
@@ -88,9 +85,8 @@ font-size: 2em;
 font-family: "DynaPuff";
 }
 
-
-
 table.active .cell:hover {
   background-color: rgb(199, 152, 226);
   
 }
+
