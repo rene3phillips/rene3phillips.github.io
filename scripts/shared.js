@@ -27,6 +27,6 @@ window.addEventListener('scroll', () => {
 });
 
 // Clear menu state when navigating to a new page
-window.addEventListener('beforeunload', () => {
+window.addEventListener('unload', () => {
   sessionStorage.removeItem('menuOpen');  // Clear menu state
 });
