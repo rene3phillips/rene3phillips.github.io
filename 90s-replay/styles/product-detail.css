@@ -9,7 +9,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 30px;
-
 }
 
 .product-left {
@@ -111,7 +110,6 @@ body {
 
 /* Landscape devices */
 @media (max-width: 844px) and (orientation: landscape) {
- 
 
 }
 

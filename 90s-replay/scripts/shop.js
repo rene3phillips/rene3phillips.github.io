@@ -44,7 +44,6 @@ function renderProducts() {
 
         // Append link to the container
         container.appendChild(productLink);
-
     });
 }
 

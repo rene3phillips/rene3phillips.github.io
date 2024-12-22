@@ -6,7 +6,7 @@ export const products = [
       price: 19999,
       description: "This is a generic description. Update me. Please. Okay, thank you!",
       keywords: [
-        "refirbished",
+        "refurbished",
         "gameboy",
         "advanced",
         "teal"
@@ -19,7 +19,7 @@ export const products = [
       price: 9999,
       description: "This is a generic description. Update me. Please. Okay, thank you!",
       keywords: [
-        "refirbished",
+        "refurbished",
         "gameboy",
         "advanced",
         "white"
@@ -32,7 +32,7 @@ export const products = [
       price: 29999,
       description: "This is a generic description. Update me. Please. Okay, thank you!",
       keywords: [
-        "refirbished",
+        "refurbished",
         "gameboy",
         "advanced",
         "black"
@@ -45,7 +45,7 @@ export const products = [
       price: 100,
       description: "This is a generic description. Update me. Please. Okay, thank you!",
       keywords: [
-        "refirbished",
+        "refurbished",
         "gameboy",
         "advanced",
         "gold"
