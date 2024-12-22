@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Refurbished GameBoy Advanced - Teal",
     "price": 1000,
-    "image": "images/products/test.avif",
+    "image": "images/products/gameboy-color.png",
     "description": "This is a generic description. Update me. Please. Okay, thank you!",
     "keywords": [
       "refurbished",
@@ -16,7 +16,7 @@
     "id": 2,
     "name": "Refurbished GameBoy Advanced - White",
     "price": 1500,
-    "image": "images/products/test.avif",
+    "image": "images/products/gameboy-color.png",
     "description": "This is a generic description. Update me. Please. Okay, thank you!",
     "keywords": [
       "refurbished",
@@ -29,7 +29,7 @@
     "id": 3,
     "name": "Refurbished GameBoy Advanced - Black",
     "price": 1500,
-    "image": "images/products/test.avif",
+    "image": "images/products/gameboy-color.png",
     "description": "This is a generic description. Update me. Please. Okay, thank you!",
     "keywords": [
       "refurbished",
@@ -42,7 +42,7 @@
     "id": 4,
     "name": "Refurbished GameBoy Advanced - Gold",
     "price": 1500,
-    "image": "images/products/test.avif",
+    "image": "images/products/gameboy-color.png",
     "description": "This is a generic description. Update me. Please. Okay, thank you!",
     "keywords": [
       "refurbished",

@@ -40,11 +40,13 @@ a.project-item:active {
 }
 
 .image-alien {
-    background-image: url('../images/projects/tic-tac-toe.png');
+    background-image: url('../images/projects/fairy-godmother.png');
+    background-color: rgba(0, 0, 0, 0.863);
 }
 
 .image-checklist {
-    background-image: url('../images/projects/online-store.jpeg');
+    background-image: url('../images/projects/90s-replay.png');
+    background-position: 50% 15%;
 }
 
 .image-bsky {

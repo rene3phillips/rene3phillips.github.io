@@ -14,7 +14,7 @@
 }
 
 .product-image {
-  height: auto;
+  height: 25vh;
   max-width: 100%;
   border-radius: 15px;
 }
