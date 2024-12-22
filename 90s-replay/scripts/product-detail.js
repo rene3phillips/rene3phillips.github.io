@@ -1,111 +1,92 @@
-import {products} from '../data/products.js';
+// Fetch the JSON file and render product details
+fetch('data/products.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json(); // Parse the JSON response
+  })
+  .then(products => {
+    const params = new URLSearchParams(window.location.search);
+    const productId = params.get('id'); // Get the product ID from the URL
 
-// Get the product ID from the URL
-const params = new URLSearchParams(window.location.search);
-const productId = params.get('id'); // Get the product ID from the URL
+    if (!productId) {
+      document.getElementById('product-detail-container').textContent = "Product ID is missing in the URL.";
+      return;
+    }
 
-// Function to render product details
-function renderProductDetail() {
-    const product = products.find(p => p.id === productId); // Find product by ID
+    console.log("Product ID from URL:", productId); // Log the product ID for debugging
+
+    // Find the product by ID
+    const product = products.find(p => String(p.id) === String(productId));
 
     if (product) {
-        const container = document.getElementById('product-detail-container');
-        container.innerHTML = ''; // Clear container to avoid duplicates
+      const container = document.getElementById('product-detail-container');
+      container.innerHTML = ''; // Clear container to avoid duplicates
 
-        // LEFT CONTAINER
-        // Create left container for the image
-        const containerLeft = document.createElement('div');
-        containerLeft.className = 'product-left';
-        // Create and add product image element
-        const img = document.createElement('img');
-        img.src = product.image;
-        img.className = 'product-image';
-        containerLeft.appendChild(img); // Append image to the left container
+      // Create product left (image) section
+      const productLeft = document.createElement('div');
+      productLeft.className = 'product-left';
+      
+      const img = document.createElement('img');
+      img.src = product.image;
+      img.className = 'product-image'; // Assuming you want this class for styling
+      productLeft.appendChild(img);
 
-        // RIGHT CONTAINER
-        // Create right container for the details
-        const containerRight = document.createElement('div');
-        containerRight.className = 'product-right';
-        // Create and add PRODUCT NAME element in the right container
-        const name = document.createElement('div');
-        name.className = 'product-name';
-        name.textContent = product.name;
-        // PRODUCT PRICE
-        const price = document.createElement('div');
-        price.className = 'product-price';
-        price.textContent = `$${(product.price / 100).toFixed(2)}`; // Format the price
-        // TEXT - QUANTITY
-        const quantityText = document.createElement('div');
-        quantityText.className = 'quantity-text';
-        quantityText.textContent = "Quantity";
-        // ADD TO CART BUTTON
-        const addToCartButton = document.createElement('button');
-        addToCartButton.className = "add-to-cart-button";
-        addToCartButton.textContent = "Add to cart";
-        // QUANTITY BUTTON (DIV)
-        const quantityButton = document.createElement('div');
-        quantityButton.className = 'quantity-button';
-        // Create decrement button
-        const decrementButton = document.createElement('button');
-        decrementButton.textContent = '-';
-        decrementButton.className = 'decrement-button';
-        decrementButton.onclick = decrement;
-        // Create input field
-        const quantityInput = document.createElement('input');
-        quantityInput.type = 'number';
-        quantityInput.id = 'quantity';
-        quantityInput.value = 1;
-        quantityInput.min = 1;
-        quantityInput.readOnly = true; // Make it read-only
-        quantityInput.className = 'input-button';
-        // Create increment button
-        const incrementButton = document.createElement('button');
-        incrementButton.textContent = '+';
-        incrementButton.className = 'increment-button';
-        incrementButton.onclick = increment;
+      // Create product right (details) section
+      const productRight = document.createElement('div');
+      productRight.className = 'product-right';
 
-        // DESCRIPTION
-        const description = document.createElement('div');
-        description.className = 'product-description';
-        description.textContent = product.description;
+      // Product Name
+      const name = document.createElement('h2');
+      name.className = 'product-name';
+      name.textContent = product.name;
+      productRight.appendChild(name);
 
-        // Append name, price, and description to the right container
-        containerRight.appendChild(name);
-        containerRight.appendChild(price);
-        containerRight.appendChild(quantityText);
-        containerRight.appendChild(quantityButton);
-        containerRight.appendChild(addToCartButton);
-        containerRight.appendChild(description);
+      // Product Price
+      const price = document.createElement('div');
+      price.className = 'product-price';
+      price.textContent = `$${(product.price / 100).toFixed(2)}`; // Assuming price is stored in cents
+      productRight.appendChild(price);
 
-        // Append decrement, input, and increment to quantity container
-        quantityButton.appendChild(decrementButton);
-        quantityButton.appendChild(quantityInput);
-        quantityButton.appendChild(incrementButton);
+      // Product Description
+      const description = document.createElement('p');
+      description.className = 'product-description';
+      description.textContent = product.description;
+      productRight.appendChild(description);
 
-        // Append left and right containers to main container
-        container.appendChild(containerLeft);
-        container.appendChild(containerRight);
+      // Quantity Section (optional)
+      const quantitySection = document.createElement('div');
+      quantitySection.className = 'quantity-button';
+      const decrementButton = document.createElement('button');
+      decrementButton.className = 'decrement-button';
+      decrementButton.textContent = '-';
+      const quantityInput = document.createElement('input');
+      quantityInput.className = 'input-button';
+      quantityInput.value = '1';
+      const incrementButton = document.createElement('button');
+      incrementButton.className = 'increment-button';
+      incrementButton.textContent = '+';
+      quantitySection.appendChild(decrementButton);
+      quantitySection.appendChild(quantityInput);
+      quantitySection.appendChild(incrementButton);
+      productRight.appendChild(quantitySection);
+
+      // Add to Cart Button
+      const addToCartButton = document.createElement('button');
+      addToCartButton.className = 'add-to-cart-button';
+      addToCartButton.textContent = 'Add to Cart';
+      productRight.appendChild(addToCartButton);
+
+      // Append product sections to container
+      container.appendChild(productLeft);
+      container.appendChild(productRight);
+
     } else {
-        // Handle case where product is not found
-        const container = document.getElementById('product-detail-container');
-        container.textContent = "Product not found.";
+      document.getElementById('product-detail-container').textContent = "Product not found.";
     }
-}
-
-// Increment and decrement functions for quantity
-function increment() {
-    const quantityInput = document.getElementById('quantity');
-    quantityInput.value = parseInt(quantityInput.value) + 1;
-}
-
-function decrement() {
-    const quantityInput = document.getElementById('quantity');
-    const currentValue = parseInt(quantityInput.value);
-    if (currentValue > 1) {
-        quantityInput.value = currentValue - 1;
-    }
-}
-
-
-// Call the render function
-renderProductDetail();
+  })
+  .catch(error => {
+    console.error('Error fetching product details:', error);
+    document.getElementById('product-detail-container').textContent = "There was an error loading the product details.";
+  });

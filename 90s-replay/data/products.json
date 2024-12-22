@@ -1,9 +1,9 @@
 [
   {
-    "id": "001",
-    "image": "images/products/test.avif",
+    "id": 1,
     "name": "Refurbished GameBoy Advanced - Teal",
-    "price": 19999,
+    "price": 1000,
+    "image": "images/products/test.avif",
     "description": "This is a generic description. Update me. Please. Okay, thank you!",
     "keywords": [
       "refurbished",
@@ -13,42 +13,42 @@
     ]
   },
   {
-    "id": "002",
-    "image": "images/products/test.avif",
+    "id": 2,
     "name": "Refurbished GameBoy Advanced - White",
-    "price": 9999,
+    "price": 1500,
+    "image": "images/products/test.avif",
     "description": "This is a generic description. Update me. Please. Okay, thank you!",
     "keywords": [
       "refurbished",
       "gameboy",
       "advanced",
-      "white"
+      "teal"
     ]
   },
   {
-    "id": "003",
-    "image": "images/products/test.avif",
+    "id": 3,
     "name": "Refurbished GameBoy Advanced - Black",
-    "price": 29999,
+    "price": 1500,
+    "image": "images/products/test.avif",
     "description": "This is a generic description. Update me. Please. Okay, thank you!",
     "keywords": [
       "refurbished",
       "gameboy",
       "advanced",
-      "black"
+      "teal"
     ]
   },
   {
-    "id": "004",
-    "image": "images/products/test.avif",
+    "id": 4,
     "name": "Refurbished GameBoy Advanced - Gold",
-    "price": 100,
+    "price": 1500,
+    "image": "images/products/test.avif",
     "description": "This is a generic description. Update me. Please. Okay, thank you!",
     "keywords": [
       "refurbished",
       "gameboy",
       "advanced",
-      "gold"
+      "teal"
     ]
   }
 ]
