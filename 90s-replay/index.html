@@ -1,51 +1,99 @@
 <!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>90sReplay - Shop</title>
-
-        <!-- Responsive Design -->
+        <!-- Basic Metadata -->
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Font Style - Tourney -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Tourney:ital,wght@0,100..900;1,100..900&family=Zeyada&display=swap" rel="stylesheet">
+        <!-- Page Title -->
+        <title>90sReplay - Shop</title>
 
-        <!-- CSS -->
+        <!-- Description for SEO -->
+        <meta 
+            name="description" 
+            content="Shop 90s Replay for retro games, toys, and collectibles! 
+            Rediscover 90s nostalgia with unique products inspired by the iconic decade. 
+            Perfect for 90s fans!" 
+        >
+
+        <!-- Google Font: Tourney -->
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" 
+            rel="stylesheet"
+        >
+
+        <!-- CSS Stylesheets -->
         <link rel="stylesheet" href="styles/shared.css">
         <link rel="stylesheet" href="styles/index.css">
     </head>
 
     <body>
-        <!-- NAV BAR -->
-         <div class="navbar">
-            <div class="div1">
-                <a href="search.html"><img class="icon" src="images/icons/search.jpeg"></a>
-            </div>
-            <a class="div2 name" href="index.html">
-                90's<br>Replay
-            </a>
-            <div class="div3">
-                <a href="login.html"><img class="icon" src="images/icons/login.jpeg"></a>
-                <a href="cart.html"><img class="icon" src="images/icons/cart.png"></a>
-            </div>
-         </div>
+        <!-- HEADER WITH NAVIGATION BAR -->
+        <header>
+            <nav class="navbar">
+                <!-- Search Section -->
+                <div class="navbar-section">
+                    <a href="search.html">
+                        <img 
+                            src="images/icons/search.jpeg"
+                            alt="Search icon"
+                            class="icon"
+                        >
+                    </a>
+                </div>
 
-         <!-- BODY -->
-         <div class="products" id="product-container">
-            <!-- Product elements generated dynamically with JavaScript -->
-         </div>
+                <!-- Website Branding -->
+                <div class="navbar-brand">
+                    <a href="index.html" class="name">
+                        90's<br>Replay
+                    </a>
+                </div>
+
+                <!-- User Actions: Login and Cart -->
+                <div class="navbar-actions">
+                    <a href="login.html">
+                        <img 
+                            src="images/icons/login.jpeg"
+                            alt="Login icon"
+                            class="icon"
+                        >
+                    </a>
+                    <a href="cart.html">
+                        <img 
+                            src="images/icons/cart.png"
+                            alt="Cart icon"
+                            class="icon" 
+                        >
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main>
+            <!-- Product Container -->
+            <section class="products" id="product-container" aria-label="Product Listings">
+                <!-- Product elements generated dynamically with JavaScript -->
+            </section>
+        </main>
         
          <!-- FOOTER -->
-         <div class="footer">
-            <div class="name-footer">
-                90's<br>Replay
-            </div>
-            <div class="text-footer">
-                Add a catchy catch-phrase here. 
-            </div>
-         </div>
+         <footer class="footer">
+            <div class="footer-content">
 
-        <!-- JS -->
+                <!-- Brand Name -->
+                <div class="footer-name">
+                    90's<br>Replay
+                </div>
+
+                <!-- Catchphrase -->
+                <div class="footer-text">
+                    ✨ 90s kid energy, no time machine needed.
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
         <script type="module" src="scripts/index.js"></script>
     </body>
 </html>

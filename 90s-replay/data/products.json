@@ -28,7 +28,7 @@
   {
     "id": 3,
     "name": "Refurbished GameBoy Advanced - Black",
-    "price": 1500,
+    "price": 2000,
     "image": "images/products/gameboy-color.png",
     "description": "This is a generic description. Update me. Please. Okay, thank you!",
     "keywords": [
@@ -41,7 +41,7 @@
   {
     "id": 4,
     "name": "Refurbished GameBoy Advanced - Gold",
-    "price": 1500,
+    "price": 2500,
     "image": "images/products/gameboy-color.png",
     "description": "This is a generic description. Update me. Please. Okay, thank you!",
     "keywords": [

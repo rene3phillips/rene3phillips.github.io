@@ -1,80 +1,77 @@
+/* General Body Styling */
 body {
-  height: 100vh;
-  width: 100vw;
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw;  /* Full width of the viewport */
+  margin: 0; /* Remove default margin */
+  font-family: "Arial", sans-serif; /* Global font family */
+  background-color: #f4f4f4; /* Light gray background */
 }
 
+/* Product Detail Container */
 #product-detail-container {
-  align-items: center;
-  justify-content: space-evenly;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* Two-column layout for desktop */
+  justify-items: center; /* Center elements horizontally */
   margin-top: 30px;
+  gap: 30px; /* Add space between columns */
 }
 
+/* Left Section (Product Image) */
 .product-left {
-  margin-right: 30px; /* Space between image and details */
-  margin-left: 30px;
-  overflow: hidden;
+  margin: 0 30px; /* Space on left and right */
+  overflow: hidden; /* Hide any overflow from image */
 }
 
 .product-image {
-  max-width: 100%;
-  height: 100vh;
-  display: block;
-  object-fit: cover;
-  border-radius: 30px;
+  max-width: 100%; /* Ensure the image does not overflow */
+  height: 100vh; /* Make image take the full height */
+  object-fit: cover; /* Ensure the image covers the space */
+  border-radius: 30px; /* Round corners for a soft look */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+/* Right Section (Product Info and Controls) */
 .product-right {
   display: flex;
   flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
   padding: 15px;
   margin-right: 30px;
   margin-left: 30px;
-  align-items: left;
+  background-color: white; /* White background for product details */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
+/* Product Name */
 .product-name {
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 30px;
-  padding-top: 15px;
+  margin-bottom: 15px;
+  color: #2c3e50; /* Dark gray color for name */
 }
 
+/* Product Price */
 .product-price {
   font-size: 24px;
-  color: #333;
-  margin-bottom: 30px;
+  color: #e74c3c; /* Red color for price */
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
+/* Product Quantity Controls */
 .quantity-text {
   font-size: 16px;
   margin-bottom: 5px;
 }
 
-.add-to-cart-button {
-  background-color: white;
-  font-size: 16px;
-  padding: 15px;
-  cursor: pointer;
-  border-radius: 15px;
-  border: 1.5px solid black;
-  width: 300px;
-  margin: 0 0 30px 0;
-}
-
-.add-to-cart-button:hover {
-  outline: 0.5px solid black;
-}
-
 .quantity-button {
   display: flex;
-  justify-content: center;
-  border: 1px solid black;
-  border-radius: 15px;
-  margin: 0 0 30px 0;
+  justify-content: space-between;
   width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-bottom: 30px;
 }
 
 .decrement-button, .increment-button {
@@ -90,62 +87,67 @@ body {
   width: 75px;
   text-align: center;
   cursor: pointer;
-  padding: 15px 0 15px 15px;
+  padding: 15px 0;
   border: none;
+  background-color: #f4f4f4; /* Light gray for input */
 }
 
+/* Add to Cart Button */
+.add-to-cart-button {
+  background-color: #e74c3c; /* Red background for button */
+  color: white; /* White text */
+  font-size: 16px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1.5px solid #e74c3c;
+  width: 100%;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
 
+.add-to-cart-button:hover {
+  outline: 0.5px solid #e74c3c; /* Darken border on hover */
+}
+
+/* Product Description */
 .product-description {
   font-size: 18px;
-  color: #555;
+  color: #555; /* Medium gray text for description */
   margin-bottom: 30px;
+  line-height: 1.6; /* Improve readability */
+  text-align: justify; /* Justify text for cleaner layout */
 }
 
 /* RESPONSIVE DESIGN */
 
-/* Portrait devices */
-@media (max-width: 844px) and (orientation: portrait) {
-
+/* Small Devices (Landscape Phones) */
+@media (max-width: 926px) and (orientation: landscape) {
+  #product-detail-container {
+    grid-template-columns: 1fr; /* Stack layout on smaller screens */
+  }
 }
 
-/* Landscape devices */
-@media (max-width: 844px) and (orientation: landscape) {
+/* Small Devices (Portrait Phones) */
+@media (max-width: 767px) and (orientation: portrait) {
+  #product-detail-container {
+    grid-template-columns: 1fr; /* Stack layout for portrait phones */
+  }
+}
 
+/* Extra Small Devices (Portrait Phones) */
+@media (max-width: 480px) and (orientation: portrait) {
+  #product-detail-container {
+    grid-template-columns: 1fr; /* Stack layout for smaller phones */
+  }
 }
 
 /* XL Devices (Large Desktops) */
 @media (max-width: 1400px) {
-  /* Add styles here if needed */
+  /* Add styles here if needed for larger desktops */
 }
 
 /* Large Devices (Laptops, Desktops) */
 @media (min-width: 1025px) {
-  /* Add styles here if needed */
-}
-
-/* Medium Devices (Tablets) */
-@media (max-width: 1366px) and (orientation: landscape) {
-
-}
-
-/* Small Devices (Large Phones) */
-@media (max-width: 926px) and (orientation: landscape) {
-  #product-detail-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-
-@media (max-width: 767px) and (orientation: portrait) {
-  #product-detail-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-
-@media (max-width: 480px) and (orientation: portrait) {
-  #product-detail-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
+  /* Add styles here if needed for larger screens */
 }

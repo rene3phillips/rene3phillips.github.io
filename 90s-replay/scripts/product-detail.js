@@ -58,15 +58,33 @@ fetch('data/products.json')
       // Quantity Section (optional)
       const quantitySection = document.createElement('div');
       quantitySection.className = 'quantity-button';
+
+      // Decrement Button
       const decrementButton = document.createElement('button');
       decrementButton.className = 'decrement-button';
       decrementButton.textContent = '-';
+      decrementButton.addEventListener('click', () => {
+        let currentQuantity = parseInt(quantityInput.value);
+        if (currentQuantity > 1) {
+          quantityInput.value = currentQuantity - 1;
+        }
+      });
+
+      // Quantity Input
       const quantityInput = document.createElement('input');
       quantityInput.className = 'input-button';
       quantityInput.value = '1';
+      quantityInput.type = 'number'; // Make it a number input
+
+      // Increment Button
       const incrementButton = document.createElement('button');
       incrementButton.className = 'increment-button';
       incrementButton.textContent = '+';
+      incrementButton.addEventListener('click', () => {
+        let currentQuantity = parseInt(quantityInput.value);
+        quantityInput.value = currentQuantity + 1;
+      });
+
       quantitySection.appendChild(decrementButton);
       quantitySection.appendChild(quantityInput);
       quantitySection.appendChild(incrementButton);
