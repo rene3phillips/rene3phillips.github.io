@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+  background-color: white;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.15s ease-in-out, opacity 0.15s ease-in-out;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+a:active {
+  opacity: 0.5;
+  color: purple;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: grid; /* Use Flexbox */
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 30px;
+  background-color: #f9f9f9;
+  border-bottom: 2px solid lightgray;
+}
+
+/* Navbar Sections */
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Align brand name vertically to the top */
+  justify-content: flex-start; /* Keep brand on the left by default */
+  height: 100%;
+}
+
+.name {
+  color: purple;
+  font-family: "Tourney", cursive;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Navbar Sections (Icons) */
+.navbar-section {
+  display: flex;
+  align-items: center; /* Align icons vertically to the top */
+  justify-content: flex-start; /* Keep icons aligned to the left */
+  height: 100%;
+}
+
+.navbar-brand {
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-actions {
+  position: absolute;
+  right: 0;
+  padding-right: 15px;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+  margin: 5px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 20px 30px;
+  border-top: 2px solid lightgray;
+}
+
+.footer-name {
+  color: black;
+  font-family: "Tourney", cursive;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.footer-text {
+  color: gray;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+
+
+
+/* SEARCH */
+/* Style for the search result titles */
+.results-container a h2 {
+  font-family: Arial, sans-serif; /* Plain font style */
+  font-size: 16px; /* Adjust size as needed */
+  color: #333; /* Color of the text */
+  text-decoration: none; /* Remove underline */
+  font-weight: normal;
+}
+
+.navbar-section {
+  background-color: white;
+  border-radius: 15px;
+}
+
+#search-input {
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+
+
+
+.checkout-link {
+  display: flex;
+
+}
+
+.cart-quantity {
+  color: purple;
+  font-weight: bold;
+}

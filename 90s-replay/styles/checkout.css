@@ -1,0 +1,53 @@
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.checkout-right {
+  text-align: right;
+  padding-right: 15px;
+
+}
+
+.card-details {
+  padding-left: 15px;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr;
+}
+
+
+
+.product-detail-image {
+  height: 150px;
+  width: auto;
+  border-radius: 15px;
+}
+
+
+
+
+
+/* Add to Cart Button */
+.delete-link {
+  background-color: white; /* Red background for button */
+  color: e74c3c; /* White text */
+  font-size: 16px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1.5px solid #e74c3c;
+  width: 75px;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+.delete-link:hover {
+  outline: 0.5px solid #e74c3c; /* Darken border on hover */
+}
+
+
+
+
+
+
+

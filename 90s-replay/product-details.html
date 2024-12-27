@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Title -->
+    <title>90's Replay - Product Description</title>
+
+    <!-- Description for SEO -->
+    <meta
+      name="description"
+      content="Explore detailed product descriptions for retro games, toys, and collectibles at 90s Replay. 
+      Relive the nostalgia of the 90s with exclusive items that every 90s fan will love!"
+    >
+
+    <!-- Google Font: Tourney -->
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" 
+        rel="stylesheet"
+    >
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles/shared.css">
+    <link rel="stylesheet" href="styles/product-details.css">
+  </head>
+
+  <body>
+    <!-- HEADER WITH NAVIGATION BAR -->
+    <header>
+      <nav class="navbar">
+        <!-- Search Section -->
+        <div class="navbar-section">
+            <img 
+              src="images/icons/search.jpeg"
+              alt="Search icon"
+              class="icon"
+            >
+            <input type="text" id="search-input" placeholder="Search for products..." />
+
+            <div class="results-container" id="results-container"></div>
+        </div>
+
+        <!-- Website Branding -->
+        <div class="navbar-brand">
+          <a href="index.html" class="name">
+            90's<br>Replay
+          </a>
+        </div>
+
+        <!-- Cart -->
+        <div class="navbar-actions">
+          <!-- add link here later for user login -->
+          <a href="checkout.html" class="checkout-link">
+            <img 
+              src="images/icons/cart.png"
+              alt="Cart icon"
+              class="icon" 
+            >
+            <div class="cart-quantity"></div>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <div class="product-details" id="product-details-container" aria-label="Product Details">
+        <!-- Product details will be dynamically rendered here -->
+
+         </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-content">
+
+        <!-- Brand Name -->
+        <div class="footer-name">
+          90's<br>Replay
+        </div>
+
+        <!-- Catchphrase -->
+        <div class="footer-text">
+          ✨ 90s kid energy, no time machine needed.
+        </div>
+      </div>
+      </footer>
+
+    <!-- JS -->
+    <script type="module" src="scripts/search.js"></script>
+
+    <script type="module" src="scripts/product-details.js"></script>
+  </body>
+</html>
