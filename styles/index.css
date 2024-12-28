@@ -107,12 +107,11 @@ header {
   .name {
     font-size: 4rem;
   }
-
 }
 
 /* Landscape devices */
 @media (max-width: 844px) and (orientation: landscape) {
-
+  /* Add styles here if needed */
 }
 
 /* XL Devices (Large Desktops) */
@@ -127,29 +126,23 @@ header {
 
 /* Medium Devices (Tablets) */
 @media (max-width: 1366px) and (orientation: landscape) {
-
-
+  /* Add styles here if needed */
 }
 
 /* Small Devices (Large Phones) */
 @media (max-width: 926px) and (orientation: landscape) {
-
   .name {
     font-size: 3rem;
   }
-
 }
 
 @media (max-width: 767px) and (orientation: portrait) {
-
   .name {
     font-size: 3rem;
   }
-
 }
 
 @media (max-width: 480px) and (orientation: portrait) {
-
   .name {
     font-size: 2rem;
   }
@@ -157,5 +150,4 @@ header {
   .about-me-container p {
     margin: 15px;
   }
-
 }

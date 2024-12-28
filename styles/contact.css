@@ -5,7 +5,7 @@ body {
 
 /* Banner */
 .banner {
-  height: 100vh; 
+  height: 100vh;
   width: 100vw;
   overflow: hidden;
   position: relative;
@@ -24,15 +24,16 @@ body {
   transform-style: preserve-3d;
   z-index: 2;
 }
-  /* Slider Animation */
-  @keyframes autoRun {
-      from {
-          transform: perspective(3000px) rotateX(-16deg) rotateY(0deg);  
-      }
-      to {
-          transform: perspective(3000px) rotateX(-16deg) rotateY(360deg);
-      }
+
+/* Slider Animation */
+@keyframes autoRun {
+  from {
+    transform: perspective(3000px) rotateX(-16deg) rotateY(0deg);
   }
+  to {
+    transform: perspective(3000px) rotateX(-16deg) rotateY(360deg);
+  }
+}
 
 /* Items in Slider */
 .banner .slider .item {
@@ -43,14 +44,13 @@ body {
   width: 100%;
   inset: 0;
   position: absolute;
-  transform: 
-      rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
-      translateZ(550px); 
+  transform: rotateY(calc((var(--position) - 1) * (360deg / var(--quantity))))
+    translateZ(550px);
 }
 
 /* Image on Each Item */
 .banner .slider .item img {
-  filter: brightness(1.2) drop-shadow(0 0  50px black); /* shadow effect */
+  filter: brightness(1.2) drop-shadow(0 0 50px black); /* shadow effect */
   height: auto;
   width: 100%;
   object-fit: cover;
@@ -63,8 +63,9 @@ body {
   transform: scale(1.4) rotateY(10deg) rotateX(10deg);
   transition: transform 0.5s ease;
 }
+
 .banner .slider .item img:not(:hover) {
-  transition: transform 0.6s ease-out, filter 0.6s ease-out; 
+  transition: transform 0.6s ease-out, filter 0.6s ease-out;
 }
 
 /* Content Under Slider */
@@ -84,7 +85,7 @@ body {
 
 .banner .content h1 {
   color: teal;
-  font-size: 12em; 
+  font-size: 12em;
   position: relative;
   margin: 0;
   padding: 0;
@@ -105,7 +106,7 @@ body {
 .banner .content .me {
   color: yellow;
   font-family: "Zeyada";
-  font-size: 150px; 
+  font-size: 150px;
   margin: 0;
   padding-left: 75%;
   line-height: 0.5;
@@ -114,12 +115,12 @@ body {
 /* Avatar */
 .banner .content .model {
   background-image: url(../images/contact/avatar.png);
-  bottom: 0; /**/
+  bottom: 0;
   left: 0;
   height: 75vh;
   width: 100%;
   position: absolute;
-  background-size: auto 105%; /*130*/
+  background-size: auto 105%; /* 130 */
   background-repeat: no-repeat;
   background-position: top center;
   z-index: 1;
@@ -134,12 +135,12 @@ body {
 
 /* Portrait devices */
 @media (max-width: 844px) and (orientation: portrait) {
-
+  /* Add styles here if needed */
 }
 
 /* Landscape devices */
 @media (max-width: 844px) and (orientation: landscape) {
-
+  /* Add styles here if needed */
 }
 
 /* XL Devices (Large Desktops) */
@@ -154,16 +155,15 @@ body {
 
 /* Medium Devices (Tablets) */
 @media (max-width: 1366px) and (orientation: landscape) {
-
+  /* Add styles here if needed */
 }
 
 /* Small Devices (Large Phones) */
 @media (max-width: 926px) and (orientation: landscape) {
-
+  /* Add styles here if needed */
 }
 
 @media (max-width: 767px) and (orientation: portrait) {
-
   .banner .content h1 {
     font-size: 6rem;
   }
@@ -171,11 +171,9 @@ body {
   .banner .content .me {
     font-size: 100px;
   }
-
 }
 
 @media (max-width: 480px) and (orientation: portrait) {
-
   .banner .content h1 {
     font-size: 5rem;
   }
@@ -183,5 +181,5 @@ body {
   .banner .content .me {
     font-size: 75px;
   }
-
 }
+

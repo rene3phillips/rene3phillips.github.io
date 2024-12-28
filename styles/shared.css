@@ -1,3 +1,4 @@
+/* General Styles */
 * {
   box-sizing: border-box;
   font-family: "Verdana", sans-serif;
@@ -17,22 +18,27 @@
   top: -200px; /* by default, the menu is located off of the screen */
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; 
+  justify-content: space-evenly;
   align-items: center; /* align links (items) to the left */
   font-size: 2rem;
   transition: 1s ease; /* text animation */
   box-shadow: 0 0 20px 5px #35204a;
   z-index: 100;
+  border-radius: 10px; /* Rounded corners for smoothness */
+  padding: 10px 0; /* Padding for a bit of spacing around the menu */
 }
 .off-screen-menu.active {
   top: 0; /* when active, the menu is no longer located off of the screen */
+  box-shadow: 0 0 25px 8px rgba(53, 32, 74, 0.8); /* Deepens the shadow when active */
 }
+
 /* Nav Bar - Vertical */
 nav {
   display: flex;
   flex-direction: column;
-  background-color: clear;
+  background-color: transparent;
 }
+
 /* Ham Icon */
 .ham-menu {
   height: 50px;
@@ -44,10 +50,14 @@ nav {
   left: 1rem;
   top: .5rem;
   z-index: 1000;
+  transition: transform 0.3s ease-in-out;
 }
+
 .ham-menu:hover {
-  opacity: 75%;
+  opacity: 85%;
+  transform: scale(1.1); /* Slight scale-up for emphasis */
 }
+
 .ham-menu span {
   height: 5px;
   width: 100%;
@@ -57,14 +67,15 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 .ham-menu span:nth-child(1) {
-  top: 25%
+  top: 25%;
 }
 .ham-menu span:nth-child(3) {
   top: 75%;
 }
+
 .ham-menu.active span:nth-child(1) {
   top: 50%;
   transform: translate(-50%, 50%) rotate(45deg);
@@ -76,52 +87,63 @@ nav {
   top: 50%;
   transform: translate(-50%, 50%) rotate(-45deg);
 }
+
 /* Links */
 .nav-bar-link {
   text-decoration: none;
   color: white;
   text-shadow: .2rem .2rem .2rem black; /* horizontal, vertical, blur, color */
-  transition: color .4s ease-in-out 0s, opacity .4s ease-in-out 0s; /* transition, transition length, ease in/out, delay */
+  transition: color .4s ease-in-out, opacity .4s ease-in-out;
+  padding: 5px 15px; /* Padding around links for better clickability */
+  border-radius: 5px; /* Soft rounded corners for links */
 }
 .nav-bar-link.active {
   color: yellow;
 }
 .nav-bar-link:active {
-opacity: 75%;
+  opacity: 75%;
 }
 .nav-bar-link:hover {
   color: yellow;
+  background-color: rgba(255, 255, 255, 0.1); /* Light background effect on hover */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Subtle glow effect on hover */
+  transform: translateX(3px); /* Slight horizontal movement */
 }
+
 /* Changes Color of 'X' Icon While Scrolling */
 .ham-menu.scrolled span {
-  background-color: yellow; 
+  background-color: yellow;
 }
 
 /* FOOTER */
 .footer {
-background-color: teal;
-bottom: 0;
-font-size: 1rem;
-padding: .75rem; 
-text-align: right;
-width: 100vw;
+  background-color: teal;
+  bottom: 0;
+  font-size: 1rem;
+  padding: .75rem;
+  text-align: right;
+  width: 100vw;
   position: relative;
   z-index: 10;
   box-shadow: 0 0 20px 5px #35204a;
   position: fixed;
+  border-top-left-radius: 10px; /* Rounded corners for footer */
+  border-top-right-radius: 10px; /* Rounded corners for footer */
+  color: black;
+  letter-spacing: 1px; /* Letter spacing for a cleaner look */
+  text-transform: uppercase; /* Uppercase footer text for better emphasis */
 }
-
 
 /* RESPONSIVE DESIGN */
 
 /* Portrait devices */
 @media (max-width: 844px) and (orientation: portrait) {
-
+  /* Add styles here if needed */
 }
 
 /* Landscape devices */
 @media (max-width: 844px) and (orientation: landscape) {
-
+  /* Add styles here if needed */
 }
 
 /* XL Devices (Large Desktops) */
@@ -136,41 +158,40 @@ width: 100vw;
 
 /* Medium Devices (Tablets) */
 @media (max-width: 1366px) and (orientation: landscape) {
-
+  /* Add styles here if needed */
 }
 
 /* Small Devices (Large Phones) */
 @media (max-width: 926px) and (orientation: landscape) {
-
+  /* Add styles here if needed */
 }
 
 @media (max-width: 767px) and (orientation: portrait) {
-
   /* Nav Bar - Horizontal */
   .off-screen-menu {
     padding-top: 15px;
-    width: 50vw; 
+    width: 50vw;
     height: 50%;
-    max-height: 50vh; 
+    max-height: 50vh;
     left: -350px;
-    top: 0; /* by default, the menu is located off of the screen */
-    flex-direction: column; 
+    top: 0;
+    flex-direction: column;
   }
   .off-screen-menu.active {
     left: 0; /* when active, the menu is no longer located off of the screen */
   }
 }
-@media (max-width: 480px) and (orientation: portrait) {
 
+@media (max-width: 480px) and (orientation: portrait) {
   /* Nav Bar - Horizontal */
   .off-screen-menu {
     padding-top: 30px;
-    width: 50vw; 
+    width: 50vw;
     height: 50%;
-    max-height: 50vh; 
+    max-height: 50vh;
     left: -250px;
     top: 0; /* by default, the menu is located off of the screen */
-    flex-direction: column; 
+    flex-direction: column;
   }
   .off-screen-menu.active {
     left: 0; /* when active, the menu is no longer located off of the screen */
