@@ -1,103 +1,122 @@
+/* General Styles */
 body {
   background-color: #161511;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.body {
-  align-items: center;
-  justify-content: space-evenly;
+/* Skills Section */
+.skills-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-evenly;
   height: 100vh;
   width: 100vw;
 }
 
-.left-column {
-  align-items: center;
-  justify-content: center;
+.skills-left {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+.skills-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Typography */
 h2 {
   color: powderblue;
   font-weight: bold;
-  padding-top: 30px;
   text-align: center;
+  font-size: 1.25rem;
+  margin: 30px 0 10px;
 }
 
 p {
-color: white;
-font-size: 1.5rem;
-text-align: center;
-}
-
-.right-column {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.image-skills {
-  display: block;
-  height: auto;
-  width: 100%;
+  color: white;
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 5px 0;
 }
 
 /* Footer */
 .footer {
-  box-shadow: 0 0 20px 5px rgba(0, 128, 128, 0.438) !important;
+  box-shadow: 0 0 20px 5px rgba(0, 128, 128, 0.438);
 }
 
-/* RESPONSIVE DESIGN */
+/* Responsive Design */
 
-/* Portrait devices */
+/* Portrait Devices */
 @media (max-width: 844px) and (orientation: portrait) {
-  .body {
+  .skills-section {
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    padding: 20px;
   }
 }
 
-/* Landscape devices */
+/* Landscape Devices */
 @media (max-width: 844px) and (orientation: landscape) {
-
+  .skills-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 /* XL Devices (Large Desktops) */
 @media (max-width: 1400px) {
-  /* Add styles here if needed */
-}
-
-/* Large Devices (Laptops, Desktops) */
-@media (min-width: 1025px) {
-  /* Add styles here if needed */
+  .skills-section {
+    padding: 20px;
+  }
 }
 
 /* Medium Devices (Tablets) */
 @media (max-width: 1366px) and (orientation: landscape) {
-
+  .skills-section {
+    padding: 15px;
+  }
 }
 
-/* Small Devices (Large Phones) */
+/* Small Devices (Phones) */
 @media (max-width: 926px) and (orientation: landscape) {
-
+  .skills-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px;
+  }
 }
 
 @media (max-width: 767px) and (orientation: portrait) {
-
-  .body {
+  .skills-section {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 30px;
+    padding: 20px;
   }
-
 }
 
 @media (max-width: 480px) and (orientation: portrait) {
-
-  .body {
+  .skills-section {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 30px;
+    padding: 15px;
   }
 
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }

@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
+        <!-- Basic Metadat -->
         <meta charset="UTF-8">
-        <!-- Responsive Design -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- Page Title -->
         <title>Natasha R. Phillips - Projects</title>
 
-          <!-- Zeyada Font -->
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Zeyada" rel="stylesheet">
+        <!-- Google Font: Zeyada -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Zeyada" rel="stylesheet">
 
-        <!-- Cascading Style Sheets -->
+        <!-- CSS Stylesheets -->
         <link rel="stylesheet" href="styles/shared.css">
         <link rel="stylesheet" href="styles/projects.css"> <!-- Page Specificity -->
     </head>
 
-
-
     <body>
-
+        <!-- HEADER WITH NAVIGATION BAR -->
         <header>
-            <!-- HAMBURGER MENU -->
+            <!-- Off-screen Menu -->
             <div class="off-screen-menu">
                 <a class="nav-bar-link" href="index.html">About</a>
                 <a class="nav-bar-link active" href="projects.html">Projects</a>
                 <a class="nav-bar-link" href="skills.html">Skills</a>
                 <a class="nav-bar-link" href="contact.html">Contact</a>
             </div>
+            <!-- Hamburger Menu -->
             <nav>
                 <div class="ham-menu">
                     <span></span>
@@ -38,72 +39,73 @@
             </nav> 
         </header>
    
-        
-        <!-- BODY -->                   
-        <div class="body">
+        <!-- MAIN CONTENT -->    
+        <main>               
+            <section class="projects-section">
 
-            <a class="project-item" href="https://github.com/rene3phillips/bsky_bot" target="blank">
-                <div class="image-bsky">
-                </div>
-                <div class="project-title">
-                    Automation Tool
-                </div>
-                <div class="description">
-                    A bot that uses the AT Protocol API to automate interactions on the Bluesky social media platform.
-                </div>   
-                <div class="keywords">
-                    <div>Python</div>
-                    <div>API Integration</div>
-                    <div>Git</div>
-                    <div>GitHub</div>
-                </div>               
-            </a>
+                <!-- Bluesky Bot -->
+                <a class="project-item" href="https://github.com/rene3phillips/bsky_bot" target="blank">
+                    <div class="image-bsky">
+                    </div>
+                    <div class="project-title">
+                        Automation Tool
+                    </div>
+                    <div class="description">
+                        A bot that uses the AT Protocol API to automate interactions on the Bluesky social media platform.
+                    </div>   
+                    <div class="keywords">
+                        <div>Python</div>
+                        <div>API Integration</div>
+                        <div>Git</div>
+                        <div>GitHub</div>
+                    </div>               
+                </a>
 
-            <a class="project-item" href="90s-replay/index.html" target="blank">
-                <div class="image-checklist">
-                </div>
-                <div class="project-title">
+                <!-- 90s Replay -->
+                <a class="project-item" href="90s-replay/index.html" target="blank">
+                    <div class="image-checklist">
+                    </div>
+                    <div class="project-title">
+                        E-Commerce Website
+                    </div>
+                    <div class="description">
+                        A nostalgic website for retro games and '90s memorabillia, complete with a checkout system.
+                    </div>  
+                    <div class="keywords">
+                        <div>HTML</div>
+                        <div>CSS</div>
+                        <div>JavaScript</div>
+                        <div>SEO</div>
+                        <div>JSON</div>
+                        <div>Git</div>
+                        <div>GitHub</div>
+                    </div>
+                </a>
+
+                <!-- Fairy Godmother, LLC -->
+                <a class="project-item" href="https://zombiequeenxoxo.wixsite.com/fairygodmother" target="blank">
+                    <div class="image-alien">
+                    </div>
+                    <div class="project-title">
                     E-Commerce Website
-                </div>
-                <div class="description">
-                    A nostalgic website for retro games and '90s memorabillia, complete with a checkout system.
-                </div>  
-                <div class="keywords">
-                    <div>HTML</div>
-                    <div>CSS</div>
-                    <div>JavaScript</div>
-                    <div>SEO</div>
-                    <div>JSON</div>
-                    <div>Git</div>
-                    <div>GitHub</div>
-                </div>
-            </a>
-
-            <a class="project-item" href="https://zombiequeenxoxo.wixsite.com/fairygodmother" target="blank">
-                <div class="image-alien">
-                </div>
-                <div class="project-title">
-                   E-Commerce Website
-                </div>
-                <div class="description">
-                    A responsive website for a cleaning business, featuring service information and booking options.
-                </div>
-                <div class="keywords">
-                    <div>SEO</div>
-                    <div>Wix</div>
-                </div>
-            </a>               
-        </div>
-
-
+                    </div>
+                    <div class="description">
+                        A responsive website for a cleaning business, featuring service information and booking options.
+                    </div>
+                    <div class="keywords">
+                        <div>SEO</div>
+                        <div>Wix</div>
+                    </div>
+                </a>               
+            </section>
+        </main>
 
         <!-- FOOTER -->  
         <footer class="footer">
             <div class="update">Last Update: December 2024</div>
         </footer> 
 
-
-
+        <!-- JavaScript -->
         <script src="scripts/shared.js"></script>
         <script src="scripts/projects.js"></script>
     </body>

@@ -2,31 +2,36 @@
 <html lang="en">
 
     <head>
+        <!-- Basic Metadata -->
         <meta charset="UTF-8">
-        <!-- Responsive Design -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- Page Title -->
         <title>Natasha R. Phillips - Skills</title>
 
-        <!-- Zeyada Font -->
+        <!-- Google Font: Zeyada -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Zeyada" rel="stylesheet">
 
-        <!-- Cascading Style Sheets -->
+        <!-- CSS Stylesheets -->
         <link rel="stylesheet" href="styles/shared.css"> 
         <link rel="stylesheet" href="styles/skills.css"> <!-- Page Specificity --> 
     </head>
 
     <body>
+        <!-- HEADER WITH NAVIGATION BAR -->
         <header>
-            <!-- HAMBURGER MENU -->
+
+            <!-- Off-screen Menu -->
             <div class="off-screen-menu">
                 <a class="nav-bar-link" href="index.html">About</a>
-                <a class="nav-bar-link" href="projects.html">Projects</a>
-                <a class="nav-bar-link active" href="skills.html">Skills</a>
+                <a class="nav-bar-link active" href="projects.html">Projects</a>
+                <a class="nav-bar-link" href="skills.html">Skills</a>
                 <a class="nav-bar-link" href="contact.html">Contact</a>
             </div>
+
+            <!-- Hamburger Menu -->
             <nav>
                 <div class="ham-menu">
                     <span></span>
@@ -36,38 +41,43 @@
             </nav> 
         </header>
 
-        <!-- LEFT COLUMN -->
-        <div class="body">
-            <div class="left-column">
-                <h2>Web Development:</h2>
-                <p>HTML, CSS, JavaScript, React.js, Three.js, API Integration, SEO</p>
-                <br>
+        <!-- MAIN CONTENT -->
+        <main>
 
-                <h2>Programming Languages:</h2>
-                <p>C, C++, Python</p>
-                <br>
+            <!-- Skills Section -->
+            <section class="skills-section">
 
-                <h2>Database & Information Management:</h2>
-                <p>MySQL, PHP, JSON</p>
+                <!-- Left Column -->
+                <div class="skills-left">
+                    <h2>Web Development:</h2>
+                    <p>HTML, CSS, JavaScript, React.js, Three.js, API Integration, SEO</p>
+                    <br>
 
-                <h2>Version Control:</h2>
-                <p>Git, GitHub</p>
-                <br>
+                    <h2>Programming Languages:</h2>
+                    <p>C, C++, Python</p>
+                    <br>
 
-                <h2>Design Tools:</h2>
-                <p>Blender, Procreate</p>
-                <br>
+                    <h2>Database & Information Management:</h2>
+                    <p>MySQL, PHP, JSON</p>
 
-                <h2>Operating Systems:</h2>
-                <p>MacOS, Windows</p>
-            </div>
-            <!-- RIGHT COLUMN -->
-            <div class="right-column">
-                <img class="image-skills" src="images/skills/avatar.jpeg">
-	        </div>
-        </div>       
+                    <h2>Version Control:</h2>
+                    <p>Git, GitHub</p>
+                    <br>
 
-       
+                    <h2>Design Tools:</h2>
+                    <p>Blender, Procreate</p>
+                    <br>
+
+                    <h2>Operating Systems:</h2>
+                    <p>MacOS, Windows</p>
+                </div>
+
+                <!-- Right Column -->
+                <div class="skills-right">
+                    <img class="skills-image" src="images/skills/avatar.jpeg">
+                </div>
+            </section>  
+        </main>     
 
         <!-- FOOTER -->  
         <footer class="footer">
@@ -78,5 +88,4 @@
         <script src="scripts/shared.js"></script>
         <script src="scripts/skills.js"></script>
     </body>
-
 </html>

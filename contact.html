@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
+        <!-- Basic Metadata-->
         <meta charset="UTF-8">
-        <!-- Responsive Design -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- Page Title -->
         <title>Natasha R. Phillips - Contact</title>
 
-        <!-- Zeyada Font -->
+        <!-- Google Font: Zeyada -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&family=Zeyada" rel="stylesheet">
 
-        <!-- Cascading Style Sheets -->
+        <!-- CSS Stylesheets -->
         <link rel="stylesheet" href="styles/shared.css">
         <link rel="stylesheet" href="styles/contact.css"> <!-- Page Specifity -->
     </head>
 
     <body>
+        <!-- HEADER WITH NAVIGATION BAR -->
         <header>
-            <!-- HAMBURGER MENU -->
+            <!-- Off-screen Menu -->
             <div class="off-screen-menu">
                 <a class="nav-bar-link" href="index.html">About</a>
                 <a class="nav-bar-link" href="projects.html">Projects</a>
                 <a class="nav-bar-link" href="skills.html">Skills</a>
                 <a class="nav-bar-link active" href="contact.html">Contact</a>
             </div>
+            <!-- Hamburger Menu -->
             <nav>
                 <div class="ham-menu">
                     <span></span>
@@ -35,34 +39,39 @@
             </nav> 
         </header>
         
-        <!-- BODY -->
-        <div class="banner">
-            <div class="slider" style="--quantity: 3">
-                <div class="item" style="--position: 1">
-                    <a href="mailto:rene3phillips@gmail.com">
-                        <img src="images/contact/email.png" alt="Email">
-                    </a>
+        <!-- MAIN CONTENT -->
+        <main>
+            <section class="banner">
+                <!-- Carousel Slider -->
+                <div class="slider" style="--quantity: 3">
+                    <!-- Email Link -->
+                    <div class="item" style="--position: 1">
+                        <a href="mailto:rene3phillips@gmail.com">
+                            <img src="images/contact/email.png" alt="Email">
+                        </a>
+                    </div>
+                    <!-- LinkedIn Link -->
+                    <div class="item" style="--position: 2">
+                        <a href="https://www.linkedin.com/in/rene3phillips/">
+                            <img src="images/contact/linkedin.png" alt="LinkedIn">
+                        </a>
+                    </div>
+                    <!-- GitHub Link -->
+                    <div class="item" style="--position: 3">
+                        <a href="https://github.com/rene3phillips">
+                            <img src="images/contact/github.png" alt="Github">
+                        </a>
+                    </div>
                 </div>
-                <div class="item gameboy" style="--position: 2">
-                    <a href="https://www.linkedin.com/in/rene3phillips/">
-                        <img src="images/contact/linkedin.png" alt="LinkedIn">
-                    </a>
+                <!-- 'Contact Me' Text & Model -->
+                <div class="content">
+                    <div class="contact-container">
+                        <h1 data-content="Contact">Contact<br><span class="me">me</span></h1>
+                    </div>
+                    <div class="model"></div>
                 </div>
-                <div class="item" style="--position: 3">
-                    <a href="https://github.com/rene3phillips">
-                        <img src="images/contact/github.png" alt="Github">
-                    </a>
-                </div>
-            </div>
-            <div class="content">
-                <div class="contact-container">
-                    <h1 data-content="Contact">Contact<br><span class="me">me</span></h1>
-                </div>
-               <!-- <div class="column">-->
-                <div class="model"></div>
-               <!-- </div> -->
-            </div>
-        </div>
+            </section>
+        </main>
             
         <!-- FOOTER -->  
         <footer class="footer">

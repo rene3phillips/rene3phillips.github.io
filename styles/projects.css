@@ -2,7 +2,7 @@ body {
     background-color: black;
 }
 
-.body {
+.projects-section {
     align-items: center;
     justify-content: space-evenly;
     display: flex;
@@ -74,7 +74,7 @@ a.project-item:active {
 
 /* Portrait devices */
 @media (max-width: 844px) and (orientation: portrait) {
-    .body {
+    .projects-section {
         flex-direction: column;
         height: 100%;
         padding: 50px 0 50px 0;
@@ -89,7 +89,7 @@ a.project-item:active {
 
 /* Landscape devices */
 @media (max-width: 844px) and (orientation: landscape) {
-    .body {
+    .projects-section {
         flex-direction: column;
         height: 100%;
         padding: 50px 0 50px 0;
@@ -113,7 +113,7 @@ a.project-item:active {
 
 /* Medium Devices (Tablets) */
 @media (max-width: 1366px) and (orientation: landscape) {
-    .body {
+    .projects-section {
         flex-direction: column;
         height: 100%;
         padding: 50px 0 50px 0;
@@ -127,7 +127,7 @@ a.project-item:active {
 
 /* Small Devices (Large Phones) */
 @media (max-width: 926px) and (orientation: landscape) {
-    .body {
+    .projects-section {
         flex-direction: column;
         height: 100%;
         padding: 50px 0 50px 0;
@@ -140,7 +140,7 @@ a.project-item:active {
 }
 
 @media (max-width: 767px) and (orientation: portrait) {
-    .body {
+    .projects-section {
         flex-direction: column;
         height: 100%;
         padding: 50px 0 50px 0;
@@ -154,7 +154,7 @@ a.project-item:active {
 }
 
 @media (max-width: 480px) and (orientation: portrait) {
-    .body {
+    .projects-section {
         flex-direction: column;
         height: 100%;
         padding: 50px 0 50px 0;
