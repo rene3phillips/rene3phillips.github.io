@@ -8,7 +8,7 @@ body {
 }
 
 /* Product Detail Container */
-#product-details-container {
+.product-details {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two-column layout for desktop */
   justify-items: center; /* Center elements horizontally */
@@ -28,8 +28,6 @@ body {
 .product-left > * {
   margin-bottom: 30px;
 }
-
-
 
 .product-detail-image {
   max-width: 100%; /* Ensure the image does not overflow */
@@ -83,7 +81,8 @@ body {
   margin-bottom: 30px;
 }
 
-.decrement-button, .increment-button {
+.decrement-button,
+.increment-button {
   background-color: white;
   font-size: 16px;
   cursor: pointer;
@@ -122,7 +121,7 @@ body {
 /* Product Description */
 .product-description {
   font-size: 18px;
-  color: #555; /* Medium gray text for description */
+  color: rgba(0, 0, 0, 0.822); /* Medium gray text for description */
   margin-bottom: 30px;
   line-height: 1.6; /* Improve readability */
   text-align: justify; /* Justify text for cleaner layout */

@@ -4,11 +4,13 @@ import { addToCart, updateCartQuantity } from '../data/cart.js';
 fetch('./data/products.json')
   .then(response => response.json())
   .then(products => {
+
     // Initialize 'productsHTML' as an empty string
     let productsHTML = '';
 
     // Iterate over the products array to display each product
     products.forEach(product => {
+
       // Add HTML for each product, with a link to the product details page
       productsHTML += `
         <section class="products" id="product-container">
@@ -47,6 +49,7 @@ const searchButton = document.querySelector('#search-button');
 function handleSearch() {
   const query = searchInput.value.trim(); // Get the search query
   if (query) {
+    
     // Redirect to the search results page with the query as a URL parameter
     window.location.href = `search-results.html?query=${encodeURIComponent(query)}`;
   }

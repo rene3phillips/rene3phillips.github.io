@@ -1,53 +1,53 @@
 [
   {
     "id": 1,
-    "name": "Refurbished GameBoy Advanced - Teal",
-    "price": 1000,
+    "name": "Refurbished GameBoy Color - Teal",
+    "price": 14999,
     "image": "images/products/gameboy-color.png",
-    "description": "This is a generic description. Update me. Please. Okay, thank you!",
+    "description": "This refurbished Game Boy Color in a classic teal color has been upgraded with modern enhancements to elevate your gaming experience. Featuring a vibrant, newly installed backlit screen for improved visibility, it also boasts an upgraded sound system for richer, clearer audio. The Game Boy logo on the front has been customized with a touch screen color change for a unique, eye-catching effect. Perfect for collectors or anyone looking to relive their childhood gaming moments with a fresh twist.",
     "keywords": [
       "refurbished",
       "gameboy",
-      "advanced",
+      "color",
       "teal"
     ]
   },
   {
     "id": 2,
-    "name": "Refurbished GameBoy Advanced - White",
-    "price": 1500,
+    "name": "Refurbished GameBoy Color - White",
+    "price": 9999,
     "image": "images/products/gameboy-color.png",
-    "description": "This is a generic description. Update me. Please. Okay, thank you!",
+    "description": "This refurbished Game Boy Color in sleek white has been upgraded with modern features to enhance your gaming experience. It now includes a bright, newly installed backlit screen for better visibility in any lighting. The audio system has also been upgraded for a richer and clearer sound, ensuring a more immersive play. Plus, the iconic Game Boy logo has been customized with a touch screen color change, adding a unique, stylish flair. Whether you're a collector or a nostalgic gamer, this revamped system brings a fresh twist to a classic favorite.",
     "keywords": [
       "refurbished",
       "gameboy",
-      "advanced",
+      "color",
       "white"
     ]
   },
   {
     "id": 3,
-    "name": "Refurbished GameBoy Advanced - Black",
-    "price": 2000,
+    "name": "Refurbished GameBoy Color - Black",
+    "price": 19999,
     "image": "images/products/gameboy-color.png",
-    "description": "This is a generic description. Update me. Please. Okay, thank you!",
+    "description": "This refurbished Game Boy Color in bold black has been enhanced with modern upgrades for an elevated gaming experience. It features a newly installed backlit screen for crisp, clear visuals in any lighting. The sound system has been improved for richer, more dynamic audio. Additionally, the Game Boy logo has been customized with a touch screen color change, adding a unique and stylish touch. Whether you're a collector or simply looking to relive the nostalgia, this upgraded Game Boy Color is the perfect combination of classic design and modern enhancements.",
     "keywords": [
       "refurbished",
       "gameboy",
-      "advanced",
+      "color",
       "black"
     ]
   },
   {
     "id": 4,
-    "name": "Refurbished GameBoy Advanced - Gold",
-    "price": 2500,
+    "name": "Refurbished GameBoy Color - Gold",
+    "price": 24999,
     "image": "images/products/gameboy-color.png",
-    "description": "This is a generic description. Update me. Please. Okay, thank you!",
+    "description": "This refurbished Game Boy Color in stunning gold has been upgraded with modern enhancements to elevate your gaming experience. It now boasts a newly installed backlit screen for improved visibility in any lighting condition. The sound system has been upgraded for richer, more immersive audio. Additionally, the Game Boy logo features a custom touch screen color change, adding a unique and stylish flair to the system. Perfect for collectors or nostalgic gamers, this gold Game Boy Color blends classic design with exciting new features.",
     "keywords": [
       "refurbished",
       "gameboy",
-      "advanced",
+      "color",
       "gold"
     ]
   }

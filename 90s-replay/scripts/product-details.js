@@ -8,15 +8,16 @@ const productId = urlParams.get('productId'); // Get the 'productId' from the UR
 fetch('./data/products.json')
   .then(response => response.json())
   .then(products => {
+
     // Find the product by id
     const product = products.find(p => p.id === parseInt(productId));
 
     if (product) {
       // Render the product details in the DOM
-      document.querySelector('#product-details-container').innerHTML = `
+      document.querySelector('.product-details').innerHTML = `
         <div class="product-left">
           <h1>${product.name}</h1>
-          <p>${product.description}</p>
+          <p class="product-description">${product.description}</p>
           <p><strong>Price:</strong> $${(product.price / 100).toFixed(2)}</p>
           <button class="add-to-cart-button" data-product-id="${product.id}">Add to Cart</button>
         </div>
@@ -28,13 +29,16 @@ fetch('./data/products.json')
       // Add event listener for the 'Add to Cart' button
       const addButton = document.querySelector('.add-to-cart-button');
       addButton.addEventListener('click', () => {
+
         // Add the product to the cart
         addToCart(product.id);
+
         // Update the cart quantity (e.g., in the header or cart icon)
         updateCartQuantity();
       });
-    } else {
-      document.querySelector('#product-details-container').innerHTML = `
+    } else 
+    {
+      document.querySelector('.product-details').innerHTML = `
         <p>Product not found.</p>
       `;
     }

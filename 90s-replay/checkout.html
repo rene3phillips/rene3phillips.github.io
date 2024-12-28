@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <!-- Basic Metadata -->
         <meta charset="utf-8">
@@ -17,10 +18,9 @@
         >
 
         <!-- Google Font: Tourney -->
-        <link 
-            href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" 
-            rel="stylesheet"
-        >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
         <!-- CSS Stylesheets -->
         <link rel="stylesheet" href="styles/shared.css">
@@ -31,6 +31,7 @@
         <!-- HEADER WITH NAVIGATION BAR -->
         <header>
             <nav class="navbar">
+
               <!-- Search Section -->
               <div class="navbar-section">
                   <img 
@@ -69,14 +70,13 @@
         <main>
             <!-- Product Container -->
             <section class="main">
-                <section class="checkout-container" id="checkout-container" aria-label="Checkout">
-                    <!-- Checkout elements generated dynamically with JavaScript -->
-                </section>
-                <section class="order-summary">
-    
-                </section>
+              <section class="checkout-container" aria-label="Checkout">
+                <!-- Checkout elements generated dynamically with JavaScript -->
+              </section>
+              <section class="order-summary">
+                <!-- Order summary generated dynamically with JavaScript -->
+              </section>
             </section>
-
         </main>
         
          <!-- FOOTER -->
@@ -97,7 +97,6 @@
 
         <!-- JavaScript -->
         <script type="module" src="scripts/search.js"></script>
-
         <script type="module" src="scripts/checkout.js"></script>
     </body>
 </html>

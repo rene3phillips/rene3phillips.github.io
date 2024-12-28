@@ -8,15 +8,20 @@ function saveToStorage() {
 
 // ADD A PRODUCT TO THE CART function (need productId)
 export function addToCart(productId) {
+
   // Convert productId into a number (base 10), instead of a string
   productId = parseInt(productId, 10); 
+
   // Finds item in the cart with the same productId
   const matchingItem = cart.find(item => item.productId === productId);
+
   // If it is found, then add 1 to the quantity
   if (matchingItem) {
     matchingItem.quantity += 1;
+
   // If it is not found, add the new item into the cart, with a quantity of 1
-  } else {
+  } else 
+  {
     cart.push({ productId, quantity: 1 });
   }
   // Save this information to local storage
@@ -25,10 +30,13 @@ export function addToCart(productId) {
 
 // UPDATE CART QUANTITY DISPLAY function 
 export function updateCartQuantity() {
+
   // Iterates through the cart array and sums up all the quantities of the items (starts with initial value of 0)
   const cartQuantity = cart.reduce((total, item) => total + item.quantity, 0);
+
   // Select the HTML with the class 'cart-quantity' and stores in variable cartQuantityElement
   const cartQuantityElement = document.querySelector('.cart-quantity');
+
   // If the cartQuantityElement exists, it updates the content with the total cartQuantity
   if (cartQuantityElement) {
     cartQuantityElement.textContent = cartQuantity;
@@ -37,10 +45,13 @@ export function updateCartQuantity() {
 
 // Remove a product from the cart (needs productId)
 export function removeFromCart(productId) {
+
   // Convert productId into a number (base 10), instead of a string
   productId = parseInt(productId, 10);
+
   // Filters the cart array to only contain the items that do not include the productId (the one to be deleted)
   cart = cart.filter(item => item.productId !== productId);
+
   // Save results to local storage 
   saveToStorage();
 }
@@ -48,6 +59,7 @@ export function removeFromCart(productId) {
 
 // RENDER THE CART (need products)
 export function renderCart(products) {
+
   // Select the checkout-container in HTML and store in checkoutContainer
   const checkoutContainer = document.querySelector('.checkout-container');
   const orderSummaryContainer = document.querySelector('.order-summary');
@@ -78,10 +90,13 @@ export function renderCart(products) {
   
   // Iterate through the cart (initialize each item as cartItem)
   cart.forEach(cartItem => {
+
     // Finds the corresponding product in the products array using the productId from the cart
     const product = products.find(p => p.id === cartItem.productId);
+
     // If a matching product is found, it appends the product details to the checkoutContainer
     if (product) {
+
       // Calculate subtotal for each item (price * quantity)
       const itemTotal = (product.price / 100) * cartItem.quantity;
       subtotal += itemTotal;
@@ -104,7 +119,8 @@ export function renderCart(products) {
           </div>
         </div>
       `;
-    } else {
+    } else 
+    {
       // If no matching product is found, log a warning
       console.warn(`Product with ID ${cartItem.productId} not found in products.json.`);
     }
@@ -125,10 +141,9 @@ export function renderCart(products) {
         <p><strong>Total: $${total.toFixed(2)}</strong></p>
       </div>
     `;
-  } else {
+  } else 
+  {
     // If the order-summary section is not found, log an error
     console.error('Order summary container not found!');
   }
 }
-
-

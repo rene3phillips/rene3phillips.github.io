@@ -4,10 +4,12 @@ const resultsContainer = document.querySelector('.results-container');
 
 // Function to perform the search
 function searchProducts(query) {
+
   // Fetch product data from the JSON file
   fetch('./data/products.json')
     .then(response => response.json())
     .then(products => {
+
       // Filter products based on the search query (case insensitive)
       const filteredProducts = products.filter(product => 
         product.name.toLowerCase().includes(query.toLowerCase()) ||
@@ -39,12 +41,12 @@ function displaySearchResults(results) {
 
       // Add description and price below the title
       productElement.appendChild(productLink);  // Add the link to the product element
-
       
       // Append the product element to the results container
       resultsContainer.appendChild(productElement);
     });
-  } else {
+  } else 
+  {
     // Display a message if no products match the search query
     resultsContainer.innerHTML = '<p>No products found.</p>';
   }
@@ -55,7 +57,8 @@ searchInput.addEventListener('input', (e) => {
   const query = e.target.value;  // Get the search query
   if (query.length >= 3) {  // Start searching after 3 characters
     searchProducts(query);
-  } else {
+  } else 
+  {
     resultsContainer.innerHTML = ''; // Clear results if the input is less than 3 characters
   }
 });

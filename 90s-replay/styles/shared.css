@@ -98,10 +98,6 @@ a:active {
   margin-top: 10px;
 }
 
-
-
-
-
 /* SEARCH */
 /* Style for the search result titles */
 .results-container a h2 {
@@ -123,12 +119,9 @@ a:active {
   background-color: white;
 }
 
-
-
-
+/* Checkout Link */
 .checkout-link {
   display: flex;
-
 }
 
 .cart-quantity {
@@ -144,6 +137,7 @@ a:active {
   background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background */
   padding: 20px;
   border: 1px solid black;
+  border-radius: 15px;
 }
 
 .results-container:empty {
