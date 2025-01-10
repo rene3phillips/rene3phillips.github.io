@@ -144,7 +144,7 @@ function Projects() {
           <a
             ref={replayRef}
             className="project-item project-item-90s-replay"
-            href="https://rene3phillips.github.io/90s-replay/index.html"
+            href="https://www.90sreplay.com"
             target="_blank"
             rel="noopener noreferrer"
           >
