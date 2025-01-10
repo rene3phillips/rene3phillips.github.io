@@ -1,0 +1,49 @@
+.about-me-container {
+    margin: 50px;
+    text-align: justify;
+    line-height: 2;
+
+}
+
+.about-me-container h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.hello {
+    font-family: "Zeyada", sans-serif;
+    color: yellow;
+    font-weight: bold;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.about-me-links {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.about-me-links a {
+    color: #FF6F61;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.about-me-links a:hover {
+    color: yellow;
+    transform: scale(1.3);
+}
+
+@media (min-width: 768px) {
+    .about-me-container {
+        margin: 50px 150px 50px 150px;
+    }
+}
+  
+  @media (min-width: 1024px) {
+    .about-me-container {
+        margin: 50px 300px 50px 300px;
+    }
+}

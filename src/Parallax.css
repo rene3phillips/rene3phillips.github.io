@@ -1,0 +1,85 @@
+  /* Parallax Section */
+  .parallax-section {
+    position: relative;
+    width: 100%;  
+    height: 100vh;  
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Parallax Images */
+  .parallax-section img {
+    position: absolute;
+    width: 100%; 
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;  
+    transition: all 0.2s ease;
+  }
+  
+  /* Avatar */
+  .parallax-section .avatar {
+    animation: bobbing 3s ease-in-out infinite;  
+  }
+  
+  /* Name */
+  .parallax-section .name {
+    color: #F5F5F5;
+    font-family: "Zeyada";
+    text-shadow: 2px 2px 4px black;
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;  
+    left: 30%;  
+    transform: translate(-50%, -50%); 
+    white-space: nowrap;
+  }
+  
+  /* Avatar Animation */
+  @keyframes bobbing {
+    0%, 100% {
+      transform: translate(0%, 0%); 
+    }
+    50% {
+      transform: translate(0%, 3%);  
+    }
+  }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .parallax-section {
+      height: 50vh; /* Reduce height slightly for smaller screens */
+  }
+
+  .parallax-section .name {
+      font-size: 3rem; /* Adjust font size for tablets */
+      top: 35%; /* Adjust position for better centering */
+      left: 30%; /* Center on smaller screens */
+      transform: translate(-50%, -35%); /* Adjust for better centering */
+  }
+
+  .parallax-section img {
+      object-fit: cover; /* Ensures images scale well */
+  }
+}
+
+@media (max-width: 480px) {
+  .parallax-section {
+      height: 35vh; /* Further reduce height for phones */
+  }
+
+  .parallax-section .name {
+      font-size: 1.5rem; /* Smaller font size for phones */
+      top: 40%; /* Adjust position */
+      left: 30%;
+      transform: translate(-50%, -40%); /* Adjust position */
+  }
+
+  .parallax-section img {
+      height: 100%; /* Allow images to resize dynamically */
+      object-fit: cover; /* Ensure the background image scales well */
+  }
+}

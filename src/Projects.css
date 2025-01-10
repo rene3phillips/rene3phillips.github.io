@@ -1,0 +1,143 @@
+/* PROJECTS */
+.projects-section {
+    height: auto;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  a.project-item {
+    background-color: powderblue;
+    border: .2rem solid yellow;
+    color: black;
+    height: 500px;
+    width: 100%;
+    margin-top: 75px;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.5s ease, opacity 0.5s ease; 
+    position: relative;
+    transform: translateX(-100%); 
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  a.project-item.active {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+  
+  a.project-item:hover {
+    opacity: 75%;
+  }
+  
+  a.project-item:active {
+    opacity: 50%;
+  }
+  
+  .image-alien, .image-checklist, .image-bsky, .image-tosh-tools, .image-book-nook {
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 70%;
+    width: 100%;
+  }
+  
+  .image-alien {
+    background-image: url('./assets/images/projects/fairy-godmother.png');
+    background-color: rgba(0, 0, 0, 0.863);
+  }
+  
+  .image-checklist {
+    background-image: url('./assets/images/projects/90s-replay.png');
+    background-position: 50% 15%;
+  }
+  
+  .image-bsky {
+    background-image: url('./assets/images/projects/bsky.jpg');
+  }
+  
+  .image-book-nook {
+    background-image: url('./assets/images/projects/book-nook.jpg');
+  }
+  
+  .image-tosh-tools {
+    background-image: url('./assets/images/projects/tosh-tools.png');
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: .3rem;
+  }
+  
+  .description {
+    padding: 0 .3rem;
+  }
+  
+  .keywords {
+    display: flex;
+    font-weight: bold;
+    justify-content: space-evenly;
+    padding-top: .8rem;
+  }
+  
+  .projects-header {
+    text-align: center;
+  }
+  
+  .project-item-blusky,
+  .project-item-tosh-tools {
+    margin-left: 50px;
+  }
+  
+  .project-item-book-nook,
+  .project-item-90s-replay {
+    margin-left: -50px;
+  }
+  
+  .project-item-fairy {
+    margin-left: 50px;
+  }
+
+  a.project-item:hover {
+    transform: scale(1.015);
+  }
+
+  .venus, .earth, .mars, .jupiter, .saturn {
+    height: 300px;
+    width: auto;
+    filter: invert(1);
+  }
+
+  .planet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .projects-header {
+    margin-top: 100px;
+  }
+
+ /* Responsive Design */
+@media (max-width: 768px) {
+  /* Remove planet images on smaller screens */
+  .venus, .earth, .mars, .jupiter, .saturn {
+      display: none;
+  }
+
+  /* Stack projects on top of each other for smaller screens */
+  .projects-section {
+      grid-template-columns: 1fr;  /* Single column */
+  }
+
+  /* Adjust margins for better alignment */
+  a.project-item {
+      margin-left: 0;
+      margin-right: 0;
+  }
+      /* Remove hover scaling effect on smaller screens */
+      a.project-item:hover {
+        transform: none;  /* Remove scaling */
+    }
+}
