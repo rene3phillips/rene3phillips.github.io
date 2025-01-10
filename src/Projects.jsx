@@ -50,7 +50,7 @@ function Projects() {
     <div className="Projects">
       <main>
         {/* Projects Section */}
-        <h1 className="projects-header">Projects</h1>
+        <h1 className="projects-header">My Projects</h1>
         <section className="projects-section" id="projects">
 
           {/* Bluesky Bot */}
