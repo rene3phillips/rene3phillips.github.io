@@ -121,23 +121,20 @@
 
  /* Responsive Design */
 @media (max-width: 768px) {
-  /* Remove planet images on smaller screens */
+
   .venus, .earth, .mars, .jupiter, .saturn {
       display: none;
   }
 
-  /* Stack projects on top of each other for smaller screens */
   .projects-section {
-      grid-template-columns: 1fr;  /* Single column */
+      grid-template-columns: 1fr;  
   }
 
-  /* Adjust margins for better alignment */
   a.project-item {
       margin-left: 0;
       margin-right: 0;
   }
-      /* Remove hover scaling effect on smaller screens */
       a.project-item:hover {
-        transform: none;  /* Remove scaling */
+        transform: none;  
     }
 }

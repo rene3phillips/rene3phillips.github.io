@@ -19,12 +19,12 @@
     justify-content: center;
     border-radius: 50%;
     padding: 150px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds a soft shadow */
-    transition: transform 0.3s ease-out; /* Smooth transition for transform */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease-out; 
     cursor: pointer;
     margin: 50px 50px 0 50px;
     position: relative;
-    z-index: 1; /* Ensure the skills container is above the ring */
+    z-index: 1; 
 
 }
 

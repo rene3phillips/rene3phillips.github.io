@@ -51,35 +51,35 @@
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
   .parallax-section {
-      height: 50vh; /* Reduce height slightly for smaller screens */
+      height: 50vh; 
   }
 
   .parallax-section .name {
-      font-size: 3rem; /* Adjust font size for tablets */
-      top: 35%; /* Adjust position for better centering */
-      left: 30%; /* Center on smaller screens */
-      transform: translate(-50%, -35%); /* Adjust for better centering */
+      font-size: 3rem; 
+      top: 35%; 
+      left: 30%; 
+      transform: translate(-50%, -35%); 
   }
 
   .parallax-section img {
-      object-fit: cover; /* Ensures images scale well */
+      object-fit: cover; 
   }
 }
 
 @media (max-width: 480px) {
   .parallax-section {
-      height: 35vh; /* Further reduce height for phones */
+      height: 35vh; 
   }
 
   .parallax-section .name {
-      font-size: 1.5rem; /* Smaller font size for phones */
-      top: 40%; /* Adjust position */
+      font-size: 1.5rem; 
+      top: 40%; 
       left: 30%;
-      transform: translate(-50%, -40%); /* Adjust position */
+      transform: translate(-50%, -40%); 
   }
 
   .parallax-section img {
-      height: 100%; /* Allow images to resize dynamically */
-      object-fit: cover; /* Ensure the background image scales well */
+      height: 100%; 
+      object-fit: cover; 
   }
 }

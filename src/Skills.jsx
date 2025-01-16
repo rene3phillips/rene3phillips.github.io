@@ -12,8 +12,7 @@ function Skills() {
     const offsetX = e.clientX - (rect.left + rect.width / 2);
     const offsetY = e.clientY - (rect.top + rect.height / 2);
 
-    // Adjust the transform based on mouse position
-    const moveAmount = 150; // The amount the circle will move
+    const moveAmount = 150; 
     const xMovement = (offsetX / rect.width) * moveAmount;
     const yMovement = (offsetY / rect.height) * moveAmount;
 
@@ -22,7 +21,7 @@ function Skills() {
 
   const handleMouseLeave = () => {
     if (skillsRef.current) {
-      skillsRef.current.style.transform = 'translate(0, 0)'; // Reset position when mouse leaves
+      skillsRef.current.style.transform = 'translate(0, 0)'; 
     }
   };
 
