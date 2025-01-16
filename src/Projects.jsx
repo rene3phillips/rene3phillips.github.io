@@ -157,6 +157,8 @@ function Projects() {
               <div>CSS</div>
               <div>JavaScript</div>
               <div>SEO</div>
+            </div>
+            <div className="keywords">
               <div>JSON</div>
               <div>Git</div>
               <div>GitHub</div>
