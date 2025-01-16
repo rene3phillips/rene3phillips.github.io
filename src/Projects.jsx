@@ -103,7 +103,6 @@ function Projects() {
             </div>
             <div className="keywords"> 
               <div>RESTful APIs</div>
-              <div>SEO</div>
               <div>Git</div>
               <div>GitHub</div>
             </div>
